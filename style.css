@@ -34,6 +34,16 @@ section {
   margin-bottom: 1rem;
 }
 
+a {
+  color: #0077b5; /* LinkedIn blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   nav {
     display: block;
@@ -44,4 +54,3 @@ section {
     margin: 5px 0;
   }
 }
-
