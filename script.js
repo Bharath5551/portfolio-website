@@ -1,9 +1,16 @@
-window.addEventListener("scroll", function () {
-  const sections = document.querySelectorAll("section");
-  sections.forEach(sec => {
-    if (window.scrollY + window.innerHeight > sec.offsetTop + 100) {
-      sec.style.opacity = 1;
-      sec.style.transform = "translateY(0)";
-    }
-  });
+const sections = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(sec => {
+
+const top = window.scrollY;
+const offset = sec.offsetTop - 500;
+
+if(top > offset){
+sec.classList.add("show");
+}
+
+});
+
 });
