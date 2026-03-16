@@ -1,16 +1,16 @@
 const sections = document.querySelectorAll(".fade");
 
-window.addEventListener("scroll", () => {
+function showSections() {
+  const triggerBottom = window.innerHeight * 0.85;
 
-sections.forEach(sec => {
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
 
-const top = window.scrollY;
-const offset = sec.offsetTop - 500;
-
-if(top > offset){
-sec.classList.add("show");
+    if (sectionTop < triggerBottom) {
+      section.classList.add("show");
+    }
+  });
 }
 
-});
-
-});
+window.addEventListener("scroll", showSections);
+window.addEventListener("load", showSections);
