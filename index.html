@@ -1,153 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bharath S Marambeed | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
-<h1>Bharath S Marambeed</h1>
-<p>Software Developer | Web Developer</p>
+<!-- NAVBAR -->
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#internships">Internships</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<nav class="navbar">
+
+<div class="logo">Bharath.</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#internships">Internships</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
 </nav>
 
-<a class="resume-btn" href="https://drive.google.com/file/d/1SND4BKiRNXiT83R4gFtns_ZGPpqaTIMB/view?usp=drive_link" target="_blank">
-Download Resume
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Hi, I'm <span>Bharath</span>
+</h1>
+
+<h2>Software Developer & Full Stack Web Developer</h2>
+
+<p>
+Building modern web applications using JavaScript, Node.js, MongoDB, and Java.
+Passionate about backend systems, UI design, and scalable applications.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://drive.google.com/file/d/1SND4BKiRNXiT83R4gFtns_ZGPpqaTIMB/view?usp=sharing"
+target="_blank"
+class="btn">
+Resume
 </a>
-</header>
 
+<a href="https://github.com/Bharath5551"
+target="_blank"
+class="btn-outline">
+GitHub
+</a>
 
-<section id="about" class="fade">
-<h2>About Me</h2>
-<p>
-I'm <strong>Bharath S Marambeed</strong>, a Computer Science Engineering student at 
-Srinivas University with a CGPA of 8.
-</p>
+</div>
 
-<p>
-I specialize in building web applications using 
-<strong>Java, Python, JavaScript, Node.js, HTML, CSS, and MongoDB</strong>.
-</p>
+</div>
 
-<p>
-I have completed multiple internships in software development and built 
-real-world projects including real-time chat applications and web platforms.
-</p>
 </section>
 
 
-<section id="skills" class="fade">
-<h2>Technical Skills</h2>
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="glass-card">
+
+<p>
+I'm a Computer Science Engineering student at Srinivas University with internship experience in software development and full stack web development.
+</p>
+
+<p>
+I specialize in JavaScript, Node.js, Java, Python, MongoDB, and modern frontend technologies.
+</p>
+
+<p>
+I enjoy building production-level web applications with smooth UI and scalable backend systems.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h2 class="section-title">Technical Skills</h2>
 
 <div class="skills-grid">
 
-<div class="skill">
+<div class="skill-card">
 <h3>Languages</h3>
 <p>Java, Python, JavaScript</p>
 </div>
 
-<div class="skill">
+<div class="skill-card">
 <h3>Frontend</h3>
 <p>HTML, CSS, JavaScript</p>
 </div>
 
-<div class="skill">
+<div class="skill-card">
 <h3>Backend</h3>
 <p>Node.js, REST APIs</p>
 </div>
 
-<div class="skill">
-<h3>Tools</h3>
-<p>Git, GitHub, MongoDB</p>
+<div class="skill-card">
+<h3>Database & Tools</h3>
+<p>MongoDB, Git, GitHub</p>
 </div>
 
-</div>
-</section>
-
-
-<section id="internships" class="fade">
-<h2>Internships</h2>
-
-<div class="project">
-<h3>Software Development Engineer Intern</h3>
-<p><strong>Bluestock Fintech</strong> | Nov 2025 – Dec 2025</p>
-<p>Worked with developers on fintech software modules and testing. Assisted in improving application functionality.</p>
-</div>
-
-<div class="project">
-<h3>Python Programming Intern</h3>
-<p><strong>CodTech IT Solutions</strong> | May 2025 – Jun 2025</p>
-<p>Built Python programs and solved real-world programming tasks.</p>
-</div>
-
-<div class="project">
-<h3>Java Development Intern</h3>
-<p><strong>TechnoHacks Solutions</strong> | Aug 2024</p>
-<p>Developed Java programs and practiced object-oriented programming.</p>
 </div>
 
 </section>
 
 
-<section id="projects" class="fade">
-<h2>Projects</h2>
+<!-- PROJECTS -->
 
-<div class="project">
+<section id="projects" class="section">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+
+<div class="project-card">
+
 <h3>Real Time Chat Application</h3>
-<p>Real-time messaging system built with WebSockets.</p>
 
-<a href="https://chat-real-project.vercel.app" target="_blank">Live Site</a>
-<a href="https://github.com/Bharath5551/chat-real" target="_blank">GitHub</a>
-</div>
-
-<div class="project">
-<h3>Smart Attendance System</h3>
-<p>Android app to automate attendance tracking and digital records.</p>
-</div>
-
-<div class="project">
-<h3>PowerZone Gym Website</h3>
-<p>Responsive gym website with modern UI.</p>
-
-<a href="https://kinglifts.vercel.app" target="_blank">Live Site</a>
-<a href="https://github.com/Bharath5551/gymmembership" target="_blank">GitHub</a>
-</div>
-
-</section>
-
-
-<section id="contact" class="fade">
-<h2>Contact</h2>
-
-<p>Email: <a href="mailto:marambeed05@gmail.com">marambeed05@gmail.com</a></p>
-
-<p>GitHub:
-<a href="https://github.com/Bharath5551" target="_blank">
-github.com/Bharath5551
-</a>
+<p>
+Real-time messaging application using WebSockets and Node.js.
 </p>
 
-<p>LinkedIn:
-<a href="https://linkedin.com/in/bharathmarambeed" target="_blank">
+<div class="project-links">
+
+<a href="https://chat-real-project.vercel.app"
+target="_blank">
+Live
+</a>
+
+<a href="https://github.com/Bharath5551/chat-real"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Smart Attendance System</h3>
+
+<p>
+Android application for digital attendance management and student tracking.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>PowerZone Gym Website</h3>
+
+<p>
+Responsive modern gym website with interactive UI.
+</p>
+
+<div class="project-links">
+
+<a href="https://kinglifts.vercel.app"
+target="_blank">
+Live
+</a>
+
+<a href="https://github.com/Bharath5551/gymmembership"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTERNSHIPS -->
+
+<section id="internships" class="section">
+
+<h2 class="section-title">Internships</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Software Development Engineer Intern</h3>
+<p>Bluestock Fintech • 2025</p>
+</div>
+
+<div class="timeline-item">
+<h3>Python Programming Intern</h3>
+<p>CodTech IT Solutions • 2025</p>
+</div>
+
+<div class="timeline-item">
+<h3>Java Development Intern</h3>
+<p>TechnoHacks Solutions • 2024</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p>Email: marambeed05@gmail.com</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/bharathmarambeed"
+target="_blank">
 linkedin.com/in/bharathmarambeed
 </a>
 </p>
 
+<p>
+GitHub:
+<a href="https://github.com/Bharath5551"
+target="_blank">
+github.com/Bharath5551
+</a>
+</p>
+
+</div>
+
 </section>
 
-<script src="script.js"></script>
+
 <footer>
-© 2026 Bharath S Marambeed • Portfolio
+<p>© 2026 Bharath S Marambeed</p>
 </footer>
+
 </body>
 </html>
