@@ -1,16 +1,24 @@
-const sections = document.querySelectorAll(".fade");
+const observer = new IntersectionObserver((entries)=>{
 
-function showSections() {
-  const triggerBottom = window.innerHeight * 0.85;
+entries.forEach((entry)=>{
 
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < triggerBottom) {
-      section.classList.add("show");
-    }
-  });
+if(entry.isIntersecting){
+entry.target.classList.add("show");
 }
 
-window.addEventListener("scroll", showSections);
-window.addEventListener("load", showSections);
+});
+
+});
+
+const hiddenElements=document.querySelectorAll(".section");
+
+hiddenElements.forEach((el)=>observer.observe(el));
+
+const glow=document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+glow.style.left=e.clientX+"px";
+glow.style.top=e.clientY+"px";
+
+});
