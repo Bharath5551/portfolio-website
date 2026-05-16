@@ -242,7 +242,7 @@ transform:translateY(-12px);
 }
 }
 
-/* ===== SECTIONS ===== */
+/* ===== SECTION ===== */
 
 .section{
 padding:120px 8%;
@@ -276,7 +276,7 @@ border-radius:20px;
 background:linear-gradient(to right,#22c55e,#3b82f6);
 }
 
-/* ===== GLASS CARD ===== */
+/* ===== ABOUT ===== */
 
 .glass-card{
 background:rgba(255,255,255,0.05);
@@ -331,18 +331,52 @@ line-height:1.7;
 
 .projects-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:35px;
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+gap:45px;
 align-items:start;
+margin-top:40px;
 }
 
 .project-card{
-background:rgba(255,255,255,0.05);
+background:linear-gradient(
+180deg,
+rgba(255,255,255,0.06),
+rgba(255,255,255,0.03)
+);
+
 border:1px solid rgba(255,255,255,0.08);
-border-radius:24px;
+
+border-radius:28px;
+
 overflow:hidden;
+
 backdrop-filter:blur(18px);
+
 transition:.4s;
+
+padding-bottom:10px;
+
+box-shadow:
+0 10px 40px rgba(0,0,0,0.25);
+
+position:relative;
+}
+
+.project-card::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+180deg,
+rgba(255,255,255,0.03),
+transparent
+);
+
+pointer-events:none;
 }
 
 .project-card:hover{
@@ -350,47 +384,53 @@ transform:translateY(-10px);
 box-shadow:0 20px 50px rgba(0,0,0,0.4);
 }
 
+/* ===== PROJECT IMAGE ===== */
+
 .project-image-wrapper{
 width:100%;
-height:260px;
-background:#0b1120;
+height:280px;
+background:#09101f;
 display:flex;
 justify-content:center;
 align-items:center;
 overflow:hidden;
-padding:18px;
+padding:22px;
 }
 
 .desktop-project-img{
 width:100%;
 height:100%;
 object-fit:cover;
-border-radius:16px;
+border-radius:18px;
 }
 
 .mobile-project-img{
 height:100%;
-max-height:220px;
+max-height:240px;
 object-fit:contain;
 border-radius:20px;
 }
 
+/* ===== PROJECT CONTENT ===== */
+
 .project-content{
-padding:25px;
+padding:28px;
 }
 
 .project-content h3{
-font-size:28px;
-margin-bottom:14px;
+font-size:32px;
+margin-bottom:16px;
 line-height:1.3;
 }
 
 .project-content p{
 color:#cbd5e1;
-line-height:1.8;
-font-size:15px;
-margin-bottom:22px;
+line-height:1.9;
+font-size:16px;
+margin-bottom:24px;
 }
+
+/* ===== PROJECT BUTTONS ===== */
 
 .project-links{
 display:flex;
@@ -551,7 +591,7 @@ padding:26px;
 }
 
 .project-image-wrapper{
-height:230px;
+height:240px;
 }
 
 .mobile-project-img{
