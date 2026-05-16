@@ -224,23 +224,7 @@ margin-top:5px;
 
 /* ===== FLOATING ICONS ===== */
 
-.floating-icons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:25px;
-font-size:34px;
-animation:float 4s ease-in-out infinite;
-}
 
-@keyframes float{
-0%,100%{
-transform:translateY(0px);
-}
-50%{
-transform:translateY(-12px);
-}
-}
 
 /* ===== SECTION ===== */
 
@@ -404,13 +388,25 @@ object-fit:cover;
 border-radius:18px;
 }
 
-.mobile-project-img{
-height:100%;
-max-height:240px;
-object-fit:contain;
-border-radius:20px;
+.mobile-gallery{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:18px;
 }
 
+.mobile-project-img{
+width:110px;
+height:auto;
+border-radius:20px;
+object-fit:contain;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:.3s;
+}
+
+.mobile-project-img:hover{
+transform:translateY(-8px) scale(1.05);
+}
 /* ===== PROJECT CONTENT ===== */
 
 .project-content{
