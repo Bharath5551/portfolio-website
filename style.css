@@ -619,6 +619,106 @@ max-height:190px;
 
 .hero-stats{
 gap:35px;
+
+  /* ===========================================
+   CERTIFICATIONS
+=========================================== */
+
+.certifications-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:35px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.certificate-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:24px;
+
+padding:22px;
+
+transition:.35s;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.certificate-card:hover{
+
+transform:translateY(-10px);
+
+background:rgba(255,255,255,.08);
+
+box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.certificate-img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:16px;
+
+margin-bottom:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.certificate-card h3{
+
+font-size:22px;
+
+margin-bottom:12px;
+
+line-height:1.5;
+
+}
+
+.issuer{
+
+font-weight:600;
+
+color:#22c55e;
+
+margin-bottom:8px;
+
+}
+
+.date{
+
+color:#cbd5e1;
+
+margin-bottom:6px;
+
+}
+
+.validity{
+
+font-size:14px;
+
+color:#94a3b8;
+
+}
 }
 
 }
