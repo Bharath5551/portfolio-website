@@ -8,6 +8,13 @@
 
 <title>Bharath S Marambeed | Portfolio</title>
 
+<meta name="description" content="Bharath S Marambeed – Software Developer and Full Stack Developer building web apps with JavaScript, Node.js, Express.js, MongoDB and Java.">
+<meta property="og:title" content="Bharath S Marambeed | Portfolio">
+<meta property="og:description" content="Software Developer & Full Stack Developer – projects, internships and certifications.">
+<meta property="og:url" content="https://bharathmportfolio.vercel.app/">
+<meta name="theme-color" content="#050816">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23050816%22/%3E%3Ctext x=%2250%22 y=%2270%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%2322c55e%22%3EB%3C/text%3E%3C/svg%3E">
+
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +30,13 @@
 
 <nav class="navbar">
 
-<div class="logo">Bharath.</div>
+<a href="#" class="logo">Bharath.</a>
 
-<ul class="nav-links">
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+<span></span><span></span><span></span>
+</button>
+
+<ul class="nav-links" id="nav-links">
 
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -40,7 +51,7 @@
 
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-content">
 
@@ -58,13 +69,13 @@ Passionate about backend development, scalable systems, and creating responsive 
 <div class="hero-buttons">
 
 <a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing"
-target="_blank"
+target="_blank" rel="noopener noreferrer"
 class="btn">
 Resume
 </a>
 
 <a href="https://github.com/Bharath5551"
-target="_blank"
+target="_blank" rel="noopener noreferrer"
 class="btn-outline">
 GitHub
 </a>
@@ -145,7 +156,7 @@ My focus is on writing clean, maintainable code and building applications that s
 
 <div class="project-image-wrapper">
 
-<img src="images/chatapp.png" class="desktop-project-img">
+<img src="images/chatapp.webp" alt="Real-Time Chat Application screenshot" class="desktop-project-img" loading="lazy">
 
 </div>
 
@@ -159,9 +170,9 @@ Built a real-time messaging application using Node.js, Express.js, Socket.IO, We
 
 <div class="project-links">
 
-<a href="https://chat-real-project.vercel.app" target="_blank">Live</a>
+<a href="https://chat-real-project.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
 
-<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank">GitHub</a>
+<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank" rel="noopener noreferrer">GitHub</a>
 
 </div>
 
@@ -175,11 +186,11 @@ Built a real-time messaging application using Node.js, Express.js, Socket.IO, We
 
 <div class="project-image-wrapper mobile-gallery">
 
-<img src="images/attendance1.png" class="mobile-project-img">
+<img src="images/attendance1.webp" alt="Smart Attendance app – screen 1" class="mobile-project-img" loading="lazy">
 
-<img src="images/attendance2.png" class="mobile-project-img">
+<img src="images/attendance2.webp" alt="Smart Attendance app – screen 2" class="mobile-project-img" loading="lazy">
 
-<img src="images/attendance3.png" class="mobile-project-img">
+<img src="images/attendance3.webp" alt="Smart Attendance app – screen 3" class="mobile-project-img" loading="lazy">
 
 </div>
 
@@ -193,9 +204,9 @@ Android application built using Java, Android Studio, MongoDB, and REST APIs. Fe
 
 <div class="project-links">
 
-<a href="https://websites-for-smartattendence.vercel.app/" target="_blank">Live</a>
+<a href="https://websites-for-smartattendence.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
 
-<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank">GitHub</a>
+<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank" rel="noopener noreferrer">GitHub</a>
 
 </div>
 
@@ -209,7 +220,7 @@ Android application built using Java, Android Studio, MongoDB, and REST APIs. Fe
 
 <div class="project-image-wrapper">
 
-<img src="images/gym.png" class="desktop-project-img">
+<img src="images/gym.webp" alt="PowerZone Gym website screenshot" class="desktop-project-img" loading="lazy">
 
 </div>
 
@@ -223,9 +234,9 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <div class="project-links">
 
-<a href="https://kinglifts.vercel.app" target="_blank">Live</a>
+<a href="https://kinglifts.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
 
-<a href="https://github.com/Bharath5551/gymmembership" target="_blank">GitHub</a>
+<a href="https://github.com/Bharath5551/gymmembership" target="_blank" rel="noopener noreferrer">GitHub</a>
 
 </div>
 
@@ -283,7 +294,7 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <div class="certificate-card">
 
-<img src="images/java-certificate.png"
+<img src="images/java-certificate.webp" loading="lazy"
 alt="Java Certification"
 class="certificate-img">
 
@@ -301,7 +312,7 @@ Issued: September 24, 2024
 
 <div class="certificate-card">
 
-<img src="images/ai-certificate.png"
+<img src="images/ai-certificate.webp" loading="lazy"
 alt="Artificial Intelligence Certification"
 class="certificate-img">
 
@@ -333,13 +344,13 @@ Valid for 5 Years
 
 <div class="contact-box">
 
-<p>Email: marambeed05@gmail.com</p>
+<p>Email: <a href="mailto:marambeed05@gmail.com">marambeed05@gmail.com</a></p>
 
 <p>
 
 LinkedIn :
 
-<a href="https://linkedin.com/in/bharathmarambeed" target="_blank">
+<a href="https://linkedin.com/in/bharathmarambeed" target="_blank" rel="noopener noreferrer">
 
 linkedin.com/in/bharathmarambeed
 
@@ -351,7 +362,7 @@ linkedin.com/in/bharathmarambeed
 
 GitHub :
 
-<a href="https://github.com/Bharath5551" target="_blank">
+<a href="https://github.com/Bharath5551" target="_blank" rel="noopener noreferrer">
 
 github.com/Bharath5551
 
@@ -363,7 +374,7 @@ github.com/Bharath5551
 
 Portfolio :
 
-<a href="https://bharathmportfolio.vercel.app" target="_blank">
+<a href="https://bharathmportfolio.vercel.app" target="_blank" rel="noopener noreferrer">
 
 bharathmportfolio.vercel.app
 
