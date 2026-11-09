@@ -12,87 +12,176 @@
 <meta property="og:title" content="Bharath S Marambeed | Portfolio">
 <meta property="og:description" content="Software Developer & Full Stack Developer – projects, internships and certifications.">
 <meta property="og:url" content="https://bharathmportfolio.vercel.app/">
-<meta name="theme-color" content="#050816">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23050816%22/%3E%3Ctext x=%2250%22 y=%2270%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%2322c55e%22%3EB%3C/text%3E%3C/svg%3E">
-
-<link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2307080c%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 font-family=%22Arial%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%234ade80%22%3EBM%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>document.documentElement.classList.add("js");</script>
 
 </head>
 
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<div class="backdrop" aria-hidden="true">
+<div class="backdrop-grid"></div>
+<div class="backdrop-glow glow-a"></div>
+<div class="backdrop-glow glow-b"></div>
+<div class="backdrop-noise"></div>
+</div>
+
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar">
+<header class="navbar">
 
-<a href="#" class="logo">Bharath.</a>
+<nav class="nav-inner" aria-label="Primary">
 
-<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-<span></span><span></span><span></span>
-</button>
+<a href="#home" class="logo" aria-label="Bharath S Marambeed – home">
+<span class="logo-mark">BM</span>
+<span class="logo-text">Bharath<span class="logo-dot">.</span></span>
+</a>
 
 <ul class="nav-links" id="nav-links">
-
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
-<li><a href="#internships">Internships</a></li>
+<li><a href="#internships">Experience</a></li>
 <li><a href="#certifications">Certificates</a></li>
 <li><a href="#contact">Contact</a></li>
-
+<li class="nav-cta-mobile"><a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a></li>
 </ul>
 
+<a class="nav-cta" href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+Resume
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+<span></span><span></span>
+</button>
+
 </nav>
+
+</header>
+
+<main id="main">
 
 <!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+<div class="hero-copy">
 
-<h1>
-Hi, I'm <span>Bharath</span>
+<p class="badge reveal">
+<span class="badge-dot"></span>
+Computer Science Engineering · Srinivas University
+</p>
+
+<p class="hero-hello reveal">Hi, I'm <strong>Bharath S Marambeed</strong></p>
+
+<h1 class="hero-title reveal">
+Software Developer <span class="amp">&amp;</span>
+<em>Full&nbsp;Stack</em> Developer
 </h1>
 
-<h2>Software Developer & Full Stack Developer</h2>
-
-<p>
+<p class="hero-lead reveal">
 Building modern web applications using JavaScript, Node.js, Express.js, MongoDB, and Java.
 Passionate about backend development, scalable systems, and creating responsive user experiences.
 </p>
 
-<div class="hero-buttons">
+<div class="hero-actions reveal">
 
-<a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing"
-target="_blank" rel="noopener noreferrer"
-class="btn">
-Resume
+<a href="#projects" class="btn btn-primary">
+View projects
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
 </a>
 
-<a href="https://github.com/Bharath5551"
-target="_blank" rel="noopener noreferrer"
-class="btn-outline">
-GitHub
+<a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+Resume
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+
+<a href="https://github.com/Bharath5551" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub profile">
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
 </a>
 
 </div>
+
+<dl class="hero-stats reveal">
+<div><dt>Projects</dt><dd>03</dd></div>
+<div><dt>Internships</dt><dd>03</dd></div>
+<div><dt>Certifications</dt><dd>02</dd></div>
+</dl>
+
+</div>
+
+<div class="hero-visual reveal" aria-hidden="true">
+
+<div class="code-card spotlight">
+
+<div class="code-head">
+<span class="dots"><i></i><i></i><i></i></span>
+<span class="code-file">bharath.js</span>
+</div>
+
+<pre class="code-body"><code><span class="k">const</span> <span class="v">bharath</span> <span class="p">=</span> {
+  <span class="a">role</span>: <span class="s">"Full Stack Developer"</span>,
+  <span class="a">languages</span>: [<span class="s">"Java"</span>, <span class="s">"JavaScript"</span>, <span class="s">"Python"</span>],
+  <span class="a">backend</span>: [<span class="s">"Node.js"</span>, <span class="s">"Express.js"</span>, <span class="s">"Socket.IO"</span>],
+  <span class="a">database</span>: <span class="s">"MongoDB"</span>,
+  <span class="a">focus</span>: <span class="s">"scalable backend systems"</span>,
+  <span class="a">writes</span>: <span class="s">"clean, maintainable code"</span>,
+};
+
+<span class="k">export default</span> <span class="v">bharath</span>;<span class="caret"></span></code></pre>
+
+</div>
+
+<div class="float-chip chip-a"><span class="chip-dot"></span>REST APIs</div>
+<div class="float-chip chip-b"><span class="chip-dot blue"></span>Real-time apps</div>
 
 </div>
 
 </section>
 
+<!-- ================= MARQUEE ================= -->
+
+<div class="marquee" aria-label="Technologies">
+<div class="marquee-track">
+<ul>
+<li>Java</li><li>JavaScript</li><li>Python</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Socket.IO</li><li>REST APIs</li><li>HTML5</li><li>CSS3</li><li>Android Studio</li><li>Git</li>
+</ul>
+<ul aria-hidden="true">
+<li>Java</li><li>JavaScript</li><li>Python</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Socket.IO</li><li>REST APIs</li><li>HTML5</li><li>CSS3</li><li>Android Studio</li><li>Git</li>
+</ul>
+</div>
+</div>
+
 <!-- ================= ABOUT ================= -->
 
 <section id="about" class="section">
 
-<h2 class="section-title">About Me</h2>
+<header class="section-head reveal">
+<span class="section-index">01</span>
+<h2 class="section-title">About <em>me</em></h2>
+</header>
 
-<div class="glass-card">
+<div class="about-grid">
+
+<p class="about-statement reveal">
+Writing <em>clean, maintainable</em> code and building applications that solve <em>real&#8209;world</em> problems.
+</p>
+
+<div class="about-body reveal">
 
 <p>
 I'm a Computer Science Engineering student at Srinivas University with internship experience in Software Development, Java, Python, and Full Stack Web Development.
@@ -106,6 +195,14 @@ I build Android applications, REST APIs, real-time web applications, and respons
 My focus is on writing clean, maintainable code and building applications that solve real-world problems.
 </p>
 
+<ul class="about-facts">
+<li><span>Education</span>B.Tech, Computer Science Engineering — Srinivas University</li>
+<li><span>Focus</span>Backend development &amp; scalable systems</li>
+<li><span>Builds</span>Web apps, REST APIs, Android apps</li>
+</ul>
+
+</div>
+
 </div>
 
 </section>
@@ -114,29 +211,36 @@ My focus is on writing clean, maintainable code and building applications that s
 
 <section id="skills" class="section">
 
-<h2 class="section-title">Technical Skills</h2>
+<header class="section-head reveal">
+<span class="section-index">02</span>
+<h2 class="section-title">Technical <em>skills</em></h2>
+</header>
 
 <div class="skills-grid">
 
-<div class="skill-card">
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
 <h3>Languages</h3>
-<p>Java, JavaScript, Python</p>
-</div>
+<ul class="tags"><li>Java</li><li>JavaScript</li><li>Python</li></ul>
+</article>
 
-<div class="skill-card">
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div>
 <h3>Frontend</h3>
-<p>HTML5, CSS3, Responsive Design</p>
-</div>
+<ul class="tags"><li>HTML5</li><li>CSS3</li><li>Responsive Design</li></ul>
+</article>
 
-<div class="skill-card">
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg></div>
 <h3>Backend</h3>
-<p>Node.js, Express.js, REST APIs, Socket.IO</p>
-</div>
+<ul class="tags"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>Socket.IO</li></ul>
+</article>
 
-<div class="skill-card">
-<h3>Database & Tools</h3>
-<p>MongoDB, Git, GitHub, Android Studio, VS Code</p>
-</div>
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.66 3.58 3 8 3s8-1.34 8-3v-13M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+<h3>Database &amp; Tools</h3>
+<ul class="tags"><li>MongoDB</li><li>Git</li><li>GitHub</li><li>Android Studio</li><li>VS Code</li></ul>
+</article>
 
 </div>
 
@@ -146,103 +250,97 @@ My focus is on writing clean, maintainable code and building applications that s
 
 <section id="projects" class="section">
 
-<h2 class="section-title">Projects</h2>
+<header class="section-head reveal">
+<span class="section-index">03</span>
+<h2 class="section-title">Selected <em>projects</em></h2>
+</header>
 
-<div class="projects-grid">
+<div class="projects">
 
 <!-- CHAT APP -->
 
-<div class="project-card">
+<article class="project reveal">
 
-<div class="project-image-wrapper">
-
-<img src="images/chatapp.webp" alt="Real-Time Chat Application screenshot" class="desktop-project-img" loading="lazy">
-
+<div class="project-media spotlight">
+<div class="browser">
+<div class="browser-bar">
+<span class="dots"><i></i><i></i><i></i></span>
+<span class="browser-url">chat-real-project.vercel.app</span>
+</div>
+<img src="images/chatapp.webp" alt="Real-Time Chat Application screenshot" loading="lazy" width="1600" height="827">
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">01 / Web App</span>
 <h3>Real-Time Chat Application</h3>
-
 <p>
 Built a real-time messaging application using Node.js, Express.js, Socket.IO, WebSockets, and JWT Authentication. Supports instant communication with a responsive user interface.
 </p>
-
+<ul class="tags"><li>Node.js</li><li>Express.js</li><li>Socket.IO</li><li>WebSockets</li><li>JWT</li></ul>
 <div class="project-links">
-
-<a href="https://chat-real-project.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
-
-<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank" rel="noopener noreferrer">GitHub</a>
-
+<a href="https://chat-real-project.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 <!-- SMART ATTENDANCE -->
 
-<div class="project-card">
+<article class="project project-flip reveal">
 
-<div class="project-image-wrapper mobile-gallery">
-
-<img src="images/attendance1.webp" alt="Smart Attendance app – screen 1" class="mobile-project-img" loading="lazy">
-
-<img src="images/attendance2.webp" alt="Smart Attendance app – screen 2" class="mobile-project-img" loading="lazy">
-
-<img src="images/attendance3.webp" alt="Smart Attendance app – screen 3" class="mobile-project-img" loading="lazy">
-
+<div class="project-media spotlight">
+<div class="phones">
+<div class="phone"><img src="images/attendance1.webp" alt="Smart Attendance app – screen 1" loading="lazy" width="400" height="825"></div>
+<div class="phone"><img src="images/attendance2.webp" alt="Smart Attendance app – screen 2" loading="lazy" width="400" height="820"></div>
+<div class="phone"><img src="images/attendance3.webp" alt="Smart Attendance app – screen 3" loading="lazy" width="400" height="834"></div>
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">02 / Android App</span>
 <h3>Smart Attendance System</h3>
-
 <p>
 Android application built using Java, Android Studio, MongoDB, and REST APIs. Features QR-code attendance, secure student/admin login, and attendance management.
 </p>
-
+<ul class="tags"><li>Java</li><li>Android Studio</li><li>MongoDB</li><li>REST APIs</li><li>QR Code</li></ul>
 <div class="project-links">
-
-<a href="https://websites-for-smartattendence.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
-
-<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank" rel="noopener noreferrer">GitHub</a>
-
+<a href="https://websites-for-smartattendence.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 <!-- GYM -->
 
-<div class="project-card">
+<article class="project reveal">
 
-<div class="project-image-wrapper">
-
-<img src="images/gym.webp" alt="PowerZone Gym website screenshot" class="desktop-project-img" loading="lazy">
-
+<div class="project-media spotlight">
+<div class="browser">
+<div class="browser-bar">
+<span class="dots"><i></i><i></i><i></i></span>
+<span class="browser-url">kinglifts.vercel.app</span>
+</div>
+<img src="images/gym.webp" alt="PowerZone Gym website screenshot" loading="lazy" width="1600" height="827">
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">03 / Website</span>
 <h3>PowerZone Gym Website</h3>
-
 <p>
 Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a BMI calculator, modern UI, and smooth animations.
 </p>
-
+<ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>BMI Calculator</li></ul>
 <div class="project-links">
-
-<a href="https://kinglifts.vercel.app" target="_blank" rel="noopener noreferrer">Live</a>
-
-<a href="https://github.com/Bharath5551/gymmembership" target="_blank" rel="noopener noreferrer">GitHub</a>
-
+<a href="https://kinglifts.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/gymmembership" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 </div>
 
@@ -252,35 +350,38 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <section id="internships" class="section">
 
-<h2 class="section-title">Internships</h2>
+<header class="section-head reveal">
+<span class="section-index">04</span>
+<h2 class="section-title">Internship <em>experience</em></h2>
+</header>
 
-<div class="timeline">
+<ol class="timeline">
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">Nov 2025 – Dec 2025</span>
+<div class="timeline-body">
 <h3>Software Development Engineer Intern</h3>
-
-<p>Bluestock Fintech • Nov 2025 – Dec 2025</p>
-
+<p>Bluestock Fintech</p>
 </div>
+</li>
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">May 2025 – Jun 2025</span>
+<div class="timeline-body">
 <h3>Python Programming Intern</h3>
-
-<p>CodTech IT Solutions • May 2025 – Jun 2025</p>
-
+<p>CodTech IT Solutions</p>
 </div>
+</li>
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">Aug 2024</span>
+<div class="timeline-body">
 <h3>Java Development Intern</h3>
-
-<p>TechnoHacks Solutions • Aug 2024</p>
-
+<p>TechnoHacks Solutions</p>
 </div>
+</li>
 
-</div>
+</ol>
 
 </section>
 
@@ -288,49 +389,42 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <section id="certifications" class="section">
 
-<h2 class="section-title">Certifications</h2>
+<header class="section-head reveal">
+<span class="section-index">05</span>
+<h2 class="section-title"><em>Certifications</em></h2>
+</header>
 
 <div class="certifications-grid">
 
-<div class="certificate-card">
+<article class="certificate-card spotlight reveal">
 
-<img src="images/java-certificate.webp" loading="lazy"
-alt="Java Certification"
-class="certificate-img">
+<button class="certificate-thumb" type="button" data-full="images/java-certificate.webp" aria-label="View Java certificate full size">
+<img src="images/java-certificate.webp" alt="Java Certification" loading="lazy" width="1400" height="1081">
+<span class="thumb-hint">View ↗</span>
+</button>
 
+<div class="certificate-info">
+<p class="issuer">Certiport | Pearson VUE</p>
 <h3>Information Technology Specialist – Java</h3>
-
-<p class="issuer">
-Certiport | Pearson VUE
-</p>
-
-<p class="date">
-Issued: September 24, 2024
-</p>
-
+<p class="date">Issued: September 24, 2024</p>
 </div>
 
-<div class="certificate-card">
+</article>
 
-<img src="images/ai-certificate.webp" loading="lazy"
-alt="Artificial Intelligence Certification"
-class="certificate-img">
+<article class="certificate-card spotlight reveal">
 
+<button class="certificate-thumb" type="button" data-full="images/ai-certificate.webp" aria-label="View Artificial Intelligence certificate full size">
+<img src="images/ai-certificate.webp" alt="Artificial Intelligence Certification" loading="lazy" width="1400" height="1081">
+<span class="thumb-hint">View ↗</span>
+</button>
+
+<div class="certificate-info">
+<p class="issuer">Certiport | Pearson VUE</p>
 <h3>Information Technology Specialist – Artificial Intelligence</h3>
-
-<p class="issuer">
-Certiport | Pearson VUE
-</p>
-
-<p class="date">
-Issued: December 15, 2025
-</p>
-
-<p class="validity">
-Valid for 5 Years
-</p>
-
+<p class="date">Issued: December 15, 2025 <span class="validity">· Valid for 5 Years</span></p>
 </div>
+
+</article>
 
 </div>
 
@@ -338,61 +432,67 @@ Valid for 5 Years
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section">
+<section id="contact" class="section contact">
 
-<h2 class="section-title">Contact</h2>
+<header class="section-head reveal">
+<span class="section-index">06</span>
+<h2 class="section-title">Get in <em>touch</em></h2>
+</header>
 
-<div class="contact-box">
+<div class="contact-panel spotlight reveal">
 
-<p>Email: <a href="mailto:marambeed05@gmail.com">marambeed05@gmail.com</a></p>
+<p class="contact-kicker">Have a project or opportunity in mind?</p>
 
-<p>
+<h3 class="contact-title">Let's build something <em>great</em> together.</h3>
 
-LinkedIn :
+<div class="contact-email">
+<a href="mailto:marambeed05@gmail.com" class="email-link">marambeed05@gmail.com</a>
+<button class="copy-btn" type="button" data-copy="marambeed05@gmail.com" aria-label="Copy email address">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+<span class="copy-label">Copy</span>
+</button>
+</div>
 
+<ul class="contact-links">
+
+<li>
 <a href="https://linkedin.com/in/bharathmarambeed" target="_blank" rel="noopener noreferrer">
-
-linkedin.com/in/bharathmarambeed
-
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>
+<span><small>LinkedIn</small>linkedin.com/in/bharathmarambeed</span>
 </a>
+</li>
 
-</p>
-
-<p>
-
-GitHub :
-
+<li>
 <a href="https://github.com/Bharath5551" target="_blank" rel="noopener noreferrer">
-
-github.com/Bharath5551
-
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+<span><small>GitHub</small>github.com/Bharath5551</span>
 </a>
+</li>
 
-</p>
-
-<p>
-
-Portfolio :
-
+<li>
 <a href="https://bharathmportfolio.vercel.app" target="_blank" rel="noopener noreferrer">
-
-bharathmportfolio.vercel.app
-
+<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+<span><small>Portfolio</small>bharathmportfolio.vercel.app</span>
 </a>
+</li>
 
-</p>
+</ul>
 
 </div>
 
 </section>
 
-<footer>
+</main>
 
+<footer class="footer">
 <p>© 2026 Bharath S Marambeed</p>
-
+<a href="#home" class="back-top">Back to top ↑</a>
 </footer>
 
-<div class="cursor-glow"></div>
+<dialog class="lightbox" aria-label="Certificate preview">
+<button class="lightbox-close" type="button" aria-label="Close preview">×</button>
+<img src="" alt="">
+</dialog>
 
 <script src="script.js"></script>
 
