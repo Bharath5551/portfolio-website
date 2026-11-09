@@ -32,6 +32,19 @@
 
 <div class="scroll-progress" aria-hidden="true"></div>
 
+<svg class="ill-defs" width="0" height="0" aria-hidden="true" focusable="false">
+<defs>
+<pattern id="ig-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)"/></pattern>
+<radialGradient id="ig-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#4ade80" stop-opacity=".3"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/></radialGradient>
+<linearGradient id="ig-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14261d"/><stop offset=".5" stop-color="#1c3a2a"/><stop offset="1" stop-color="#14261d"/></linearGradient>
+<linearGradient id="ig-hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1d26"/><stop offset="1" stop-color="#2a1416"/></linearGradient>
+<linearGradient id="ig-gauge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa"/><stop offset=".45" stop-color="#4ade80"/><stop offset=".75" stop-color="#fbbf24"/><stop offset="1" stop-color="#f87171"/></linearGradient>
+<marker id="ig-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ig-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ig-arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#f87171" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+</svg>
+
 <div class="backdrop" aria-hidden="true">
 <div class="backdrop-grid"></div>
 <div class="backdrop-glow glow-a"></div>
@@ -397,16 +410,142 @@ I'm looking for a full-time, on-site software development or generative AI inter
 <article class="project project-flip reveal">
 
 <div class="project-media spotlight">
-<div class="pipeline" aria-hidden="true">
-<div class="pipe-step"><span class="pipe-icon">PDF</span><b>Course notes</b><small>uploaded PDFs</small></div>
-<div class="pipe-arrow"></div>
-<div class="pipe-step"><span class="pipe-icon">⟨e⟩</span><b>Embeddings</b><small>Hugging Face</small></div>
-<div class="pipe-arrow"></div>
-<div class="pipe-step"><span class="pipe-icon">DB</span><b>ChromaDB</b><small>vector store</small></div>
-<div class="pipe-arrow"></div>
-<div class="pipe-step accent"><span class="pipe-icon">LLM</span><b>Llama 3.1</b><small>via Groq</small></div>
-<div class="pipe-arrow"></div>
-<div class="pipe-step"><span class="pipe-icon">✓</span><b>Grounded answer</b><small>with file + page citation</small></div>
+<div class="rag-visual">
+<svg class="rag-svg" viewBox="0 0 600 640" role="img" aria-labelledby="rag-svg-title rag-svg-desc">
+<title id="rag-svg-title">Study Assistant RAG pipeline</title>
+<desc id="rag-svg-desc">A student's question and their PDF course notes are turned into Hugging Face embeddings stored in ChromaDB. The most relevant chunks are retrieved and passed to Llama 3.1 on Groq, which writes a grounded answer that cites the exact file and page, and says so when the notes don't cover the question.</desc>
+<defs>
+<pattern id="rv-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+<path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)"/>
+</pattern>
+<radialGradient id="rv-glow" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#4ade80" stop-opacity=".3"/>
+<stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rv-db" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14261d"/>
+<stop offset=".5" stop-color="#1c3a2a"/>
+<stop offset="1" stop-color="#14261d"/>
+</linearGradient>
+<marker id="rv-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L8 5 L1 9" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<rect width="600" height="640" fill="url(#rv-grid)"/>
+
+<!-- question -->
+<g class="rv-question" transform="translate(300 52)">
+<rect x="-176" y="-26" width="352" height="52" rx="26"/>
+<text x="0" y="7">“Explain deadlock from my OS notes.”</text>
+</g>
+<path class="rv-link rv-link-blue" d="M300 78 V174" marker-end="url(#rv-arrow)"/>
+
+<!-- notes -->
+<g class="rv-docs" transform="translate(104 228)">
+<g transform="translate(10 -12) rotate(6)"><rect x="-34" y="-44" width="68" height="88" rx="6"/></g>
+<g transform="translate(5 -6) rotate(3)"><rect x="-34" y="-44" width="68" height="88" rx="6"/></g>
+<g class="rv-doc-front">
+<rect x="-34" y="-44" width="68" height="88" rx="6"/>
+<rect class="rv-pdf" x="-24" y="-34" width="28" height="14" rx="3"/>
+<text class="rv-pdf-text" x="-10" y="-23.5">PDF</text>
+<path d="M-24 -8H24M-24 2H18M-24 12H24M-24 22H10"/>
+</g>
+<text class="rv-caption" y="76">Course notes</text>
+</g>
+
+<path class="rv-link" d="M156 228 H218" marker-end="url(#rv-arrow)"/>
+
+<!-- embeddings -->
+<g class="rv-emb" transform="translate(300 228)">
+<rect class="rv-box" x="-72" y="-50" width="144" height="100" rx="14"/>
+<g class="rv-cells">
+<rect x="-56" y="-36" width="10" height="12" rx="2" style="opacity:0.5"/>
+<rect x="-42" y="-36" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-28" y="-36" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="-14" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="0" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="14" y="-36" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="28" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="42" y="-36" width="10" height="12" rx="2" style="opacity:0.5"/>
+<rect x="-56" y="-18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-42" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-28" y="-18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-14" y="-18" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="0" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="14" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="28" y="-18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="42" y="-18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="-56" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-42" y="0" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-28" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-14" y="0" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="0" y="0" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="14" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="28" y="0" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="42" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-56" y="18" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-42" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-28" y="18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-14" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="0" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="14" y="18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="28" y="18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="42" y="18" width="10" height="12" rx="2" style="opacity:0.3"/>
+</g>
+<text class="rv-caption" y="76">Embeddings</text>
+<text class="rv-sub" y="94">Hugging Face</text>
+</g>
+
+<path class="rv-link" d="M382 228 H436" marker-end="url(#rv-arrow)"/>
+
+<!-- vector store -->
+<g class="rv-store" transform="translate(494 228)">
+<path class="rv-cyl" d="M-50 -36 V36 A50 14 0 0 0 50 36 V-36"/>
+<ellipse class="rv-cyl-top" cx="0" cy="-36" rx="50" ry="14"/>
+<path class="rv-cyl-ring" d="M-50 -6 A50 14 0 0 0 50 -6M-50 18 A50 14 0 0 0 50 18"/>
+<text class="rv-caption" y="76">ChromaDB</text>
+<text class="rv-sub" y="94">vector store</text>
+</g>
+
+<!-- retrieval bus -->
+<path class="rv-link" d="M494 280 V358"/>
+<path class="rv-bus" d="M494 358 H160"/>
+<path class="rv-link" d="M160 358 V374" marker-end="url(#rv-arrow)"/>
+<path class="rv-link rv-hot" d="M300 358 V374" marker-end="url(#rv-arrow)"/>
+<path class="rv-link" d="M440 358 V374" marker-end="url(#rv-arrow)"/>
+<text class="rv-tag" x="484" y="350">top-k retrieval</text>
+
+<!-- chunks -->
+<g class="rv-chunk" transform="translate(160 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.4</text></g>
+<g class="rv-chunk rv-chunk-hot" transform="translate(300 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.12</text></g>
+<g class="rv-chunk" transform="translate(440 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.13</text></g>
+
+<path class="rv-link" d="M160 432 Q160 452 238 466" marker-end="url(#rv-arrow)"/>
+<path class="rv-link rv-hot" d="M300 432 V452" marker-end="url(#rv-arrow)"/>
+<path class="rv-link" d="M440 432 Q440 452 362 466" marker-end="url(#rv-arrow)"/>
+
+<!-- llm -->
+<circle cx="300" cy="482" r="70" fill="url(#rv-glow)"/>
+<g class="rv-llm" transform="translate(300 482)">
+<rect x="-90" y="-26" width="180" height="52" rx="26"/>
+<text class="rv-llm-title" x="0" y="0">Llama 3.1</text>
+<text class="rv-llm-sub" x="0" y="16">via Groq · grounded prompt</text>
+</g>
+
+<g class="rv-side" transform="translate(76 482)"><rect x="-62" y="-17" width="124" height="34" rx="17"/><text y="5">Eval: accuracy</text></g>
+<g class="rv-side rv-side-warn" transform="translate(524 482)"><rect x="-62" y="-17" width="124" height="34" rx="17"/><text y="5">Not in notes? Says so</text></g>
+
+<path class="rv-link rv-hot" d="M300 508 V532" marker-end="url(#rv-arrow)"/>
+
+<!-- answer -->
+<g class="rv-answer" transform="translate(300 576)">
+<rect x="-190" y="-40" width="380" height="80" rx="16"/>
+<path class="rv-answer-lines" d="M-166 -16H120M-166 0H86"/>
+<g class="rv-cite" transform="translate(-102 22)"><rect x="-64" y="-11" width="128" height="22" rx="11"/><text y="4">↳ notes.pdf · p.12</text></g>
+<g class="rv-check" transform="translate(126 22)"><rect x="-44" y="-11" width="88" height="22" rx="11"/><text y="4">✓ grounded</text></g>
+</g>
+</svg>
 </div>
 </div>
 
@@ -429,15 +568,48 @@ I'm looking for a full-time, on-site software development or generative AI inter
 <article class="project reveal">
 
 <div class="project-media spotlight">
-<div class="context-demo" aria-hidden="true">
-<div class="ctx-label">Conversation context</div>
-<div class="ctx-msg">Previous message</div>
-<div class="ctx-msg">Previous message</div>
-<div class="ctx-msg ctx-target">Message to classify</div>
-<div class="ctx-arrow"></div>
-<div class="ctx-model"><span class="pipe-icon">T</span>Transformer classifier <small>PyTorch · Hugging Face</small></div>
-<div class="ctx-arrow"></div>
-<div class="ctx-out"><span class="out-pill">toxic</span><span class="out-pill">not toxic</span></div>
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 600" role="img" aria-labelledby="tox-t tox-d">
+<title id="tox-t">Context-aware toxicity detection</title>
+<desc id="tox-d">The same message, "You're unbelievable.", appears in two conversations. A transformer reads each message together with its context and labels the friendly one not toxic and the hostile one toxic. Predictions run in real time in a Streamlit demo.</desc>
+<rect width="600" height="600" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="36">same message · different context</text>
+<rect class="i-card" x="30" y="56" width="255" height="236" rx="16"/>
+<text class="i-m i-start" x="48" y="82">context A</text>
+<g transform="translate(46 96)"><rect class="i-bub" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">I finished my first marathon!</text></g>
+<g transform="translate(63 144)"><rect class="i-bub-out" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">Under four hours, too.</text></g>
+<path class="i-bracket" d="M38 100 v84"/>
+<g transform="translate(46 214)"><rect class="i-tgt" width="223" height="46" rx="16"/><text class="i-msg-strong i-start" x="16" y="29">You're unbelievable.</text></g>
+<rect class="i-card" x="315" y="56" width="255" height="236" rx="16"/>
+<text class="i-m i-start" x="333" y="82">context B</text>
+<g transform="translate(331 96)"><rect class="i-bub" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">You broke my laptop again.</text></g>
+<g transform="translate(348 144)"><rect class="i-bub-out" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">And then laughed about it.</text></g>
+<path class="i-bracket" d="M323 100 v84"/>
+<g transform="translate(331 214)"><rect class="i-tgt" width="223" height="46" rx="16"/><text class="i-msg-strong i-start" x="16" y="29">You're unbelievable.</text></g>
+<path class="i-link" d="M157 292 C157 330 230 330 250 356" marker-end="url(#ig-arrow)"/>
+<path class="i-link" d="M442 292 C442 330 370 330 350 356" marker-end="url(#ig-arrow)"/>
+<rect class="i-layer" x="186" y="350" width="228" height="104" rx="14"/>
+<rect class="i-layer" x="178" y="356" width="244" height="104" rx="14"/>
+<rect class="i-card-hot" x="170" y="362" width="260" height="104" rx="14"/>
+<path class="i-attn" d="M206 392 Q263.0 357.48 320 392"/>
+<path class="i-attn" d="M244 392 Q320.0 350.64 396 392"/>
+<path class="i-attn" d="M282 392 Q320.0 364.32 358 392"/>
+<path class="i-attn" d="M206 392 Q244.0 364.32 282 392"/>
+<path class="i-attn" d="M320 392 Q358.0 364.32 396 392"/>
+<circle class="i-tok" cx="206" cy="394" r="6"/>
+<circle class="i-tok" cx="244" cy="394" r="6"/>
+<circle class="i-tok" cx="282" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="320" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="358" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="396" cy="394" r="6"/>
+<text class="i-t" x="300" y="430">Transformer classifier</text>
+<text class="i-m" x="300" y="450">PyTorch · Hugging Face</text>
+<path class="i-link" d="M250 466 C230 490 157 490 157 506" marker-end="url(#ig-arrow)"/>
+<path class="i-link i-link-red" d="M350 466 C370 490 442 490 442 506" marker-end="url(#ig-arrow-red)"/>
+<g transform="translate(157 528)"><rect class="i-pill-g" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip-g" y="4.5">✓ not toxic</text></g>
+<g transform="translate(442 528)"><rect class="i-pill-r" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip-r" y="4.5">⚠ toxic</text></g>
+<g transform="translate(300 576)"><rect class="i-pill-n" x="-125.0" y="-15" width="250" height="30" rx="15"/><text class="i-chip" y="4.5">Streamlit demo · real-time</text></g>
+</svg>
 </div>
 </div>
 
@@ -474,12 +646,53 @@ I'm looking for a full-time, on-site software development or generative AI inter
 <article class="project reveal">
 
 <div class="project-media spotlight">
-<div class="browser">
-<div class="browser-bar">
-<span class="dots"><i></i><i></i><i></i></span>
-<span class="browser-url">chat-real-project.vercel.app</span>
-</div>
-<img src="images/chatapp.webp" alt="Real-Time Chat Application screenshot" loading="lazy" width="1600" height="827">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 500" role="img" aria-labelledby="chat-t chat-d">
+<title id="chat-t">Real-time chat application</title>
+<desc id="chat-d">Two chat windows, for Bharath and Akash, exchange messages instantly through a Node.js and Express server running Socket.IO over WebSockets, with JWT authentication. The app is responsive and deployed on Vercel.</desc>
+<rect width="600" height="500" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="34">real-time · WebSockets</text>
+<rect class="i-card" x="20" y="56" width="184" height="320" rx="16"/>
+<path class="i-divider" d="M20 92 H204"/>
+<circle class="i-avatar" cx="42" cy="74" r="9"/><text class="i-avatar-t" x="42" y="78">B</text>
+<text class="i-t i-start" x="58" y="79">Bharath</text>
+<circle class="i-online" cx="186" cy="74" r="4"/>
+<rect class="i-bub" x="34" y="108" width="110" height="30" rx="12"/><path class="i-sk" d="M46 123H130"/>
+<rect class="i-bub-out" x="94" y="150" width="96" height="30" rx="12"/><path class="i-sk-g" d="M106 165H178"/>
+<rect class="i-bub" x="34" y="192" width="124" height="30" rx="12"/><path class="i-sk" d="M46 207H144"/>
+<rect class="i-bub-out" x="110" y="234" width="80" height="30" rx="12"/><path class="i-sk-g" d="M122 249H178"/>
+<rect class="i-bub" x="34" y="276" width="70" height="30" rx="12"/><path class="i-sk" d="M46 291H90"/>
+<rect class="i-input" x="32" y="334" width="128" height="28" rx="14"/><circle class="i-send" cx="178" cy="348" r="14"/><path class="i-send-ico" d="M172 348h11m-4-4 4 4-4 4"/>
+<rect class="i-card" x="396" y="56" width="184" height="320" rx="16"/>
+<path class="i-divider" d="M396 92 H580"/>
+<circle class="i-avatar" cx="418" cy="74" r="9"/><text class="i-avatar-t" x="418" y="78">A</text>
+<text class="i-t i-start" x="434" y="79">Akash</text>
+<circle class="i-online" cx="562" cy="74" r="4"/>
+<rect class="i-bub-out" x="456" y="108" width="110" height="30" rx="12"/><path class="i-sk-g" d="M468 123H554"/>
+<rect class="i-bub" x="410" y="150" width="96" height="30" rx="12"/><path class="i-sk" d="M422 165H492"/>
+<rect class="i-bub-out" x="442" y="192" width="124" height="30" rx="12"/><path class="i-sk-g" d="M454 207H554"/>
+<rect class="i-bub" x="410" y="234" width="80" height="30" rx="12"/><path class="i-sk" d="M422 249H476"/>
+<rect class="i-bub-out" x="496" y="276" width="70" height="30" rx="12"/><path class="i-sk-g" d="M508 291H554"/>
+<rect class="i-input" x="408" y="334" width="128" height="28" rx="14"/><circle class="i-send" cx="554" cy="348" r="14"/><path class="i-send-ico" d="M548 348h11m-4-4 4 4-4 4"/>
+<circle cx="300" cy="216" r="74" fill="url(#ig-glow)"/>
+<circle class="i-hub-ring" cx="300" cy="216" r="64"/>
+<circle class="i-hub" cx="300" cy="216" r="52"/>
+<text class="i-t" x="300" y="214">Socket.IO</text>
+<text class="i-m i-m-green" x="300" y="232">Node · Express</text>
+<path class="i-link" d="M206 196 H246" marker-end="url(#ig-arrow)"/>
+<path class="i-link i-link-blue" d="M246 236 H206" marker-end="url(#ig-arrow-blue)"/>
+<path class="i-link i-link-blue" d="M354 196 H394" marker-end="url(#ig-arrow-blue)"/>
+<path class="i-link" d="M394 236 H354" marker-end="url(#ig-arrow)"/>
+<circle class="i-runner" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M206 196 H246 A54 54 0 0 1 354 196 H394"/></circle>
+<circle class="i-runner i-runner-blue" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M394 236 H354 A54 54 0 0 1 246 236 H206"/></circle>
+<g transform="translate(300 128)"><rect class="i-pill-g" x="-48" y="-15" width="96" height="30" rx="15"/><path class="i-lock" d="M-36 -3h11v9h-11zM-33.5 -3v-3.5a3 3 0 0 1 6 0v3.5"/><text class="i-chip-g" x="10" y="4.5">JWT auth</text></g>
+<path class="i-link" d="M300 143 V160"/>
+<g transform="translate(300 300)"><rect class="i-pill-n" x="-75.0" y="-15" width="150" height="30" rx="15"/><text class="i-chip" y="4.5">instant delivery</text></g>
+<g transform="translate(84 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Socket.IO</text></g>
+<g transform="translate(228 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">JWT login</text></g>
+<g transform="translate(372 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Responsive UI</text></g>
+<g transform="translate(516 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Vercel</text></g>
+</svg>
 </div>
 </div>
 
@@ -503,10 +716,48 @@ Live messaging over WebSockets with JWT login and a responsive UI, built with No
 <article class="project project-flip reveal">
 
 <div class="project-media spotlight">
-<div class="phones">
-<div class="phone"><img src="images/attendance1.webp" alt="Smart Attendance app – screen 1" loading="lazy" width="400" height="825"></div>
-<div class="phone"><img src="images/attendance2.webp" alt="Smart Attendance app – screen 2" loading="lazy" width="400" height="820"></div>
-<div class="phone"><img src="images/attendance3.webp" alt="Smart Attendance app – screen 3" loading="lazy" width="400" height="834"></div>
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 600" role="img" aria-labelledby="att-t att-d">
+<title id="att-t">Smart Attendance System</title>
+<desc id="att-d">An admin generates a session QR code, a student scans it with the Android app and is marked present. Both apps use separate logins and talk to REST APIs backed by MongoDB, which keeps subject-wise attendance.</desc>
+<rect width="600" height="600" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="34">QR attendance · Android</text>
+<rect class="i-card" x="24" y="56" width="236" height="276" rx="16"/>
+<path class="i-shield" d="M46 72 l9 -4 9 4 v6 c0 6 -4 10 -9 12 c-5 -2 -9 -6 -9 -12z"/>
+<text class="i-t i-start" x="74" y="85">Admin</text>
+<text class="i-m i-start" x="74" y="102">session QR</text>
+<rect class="i-qr-bg" x="66.0" y="138.0" width="152.0" height="152.0" rx="12.0"/><rect class="i-qr" x="74.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="98.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="122.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="162.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="170.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="178.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="202.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="74.0" y="146.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="82.0" y="154.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="90.0" y="162.0" width="24.0" height="24.0" rx="4.0"/><rect class="i-qr" x="154.0" y="146.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="162.0" y="154.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="170.0" y="162.0" width="24.0" height="24.0" rx="4.0"/><rect class="i-qr" x="74.0" y="226.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="82.0" y="234.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="90.0" y="242.0" width="24.0" height="24.0" rx="4.0"/>
+<path class="i-link i-link-blue" d="M266 214 H364" marker-end="url(#ig-arrow-blue)"/>
+<text class="i-m i-m-blue" x="315" y="204">scan</text>
+<rect class="i-phone" x="372" y="46" width="172" height="300" rx="28"/>
+<rect class="i-screen" x="382" y="56" width="152" height="280" rx="20"/>
+<rect class="i-notch" x="434" y="62" width="48" height="10" rx="5"/>
+<text class="i-t" x="458" y="98">Scan QR</text>
+<rect class="i-qr-bg" x="415.52941176470586" y="141.52941176470588" width="84.94117647058823" height="84.94117647058823" rx="6.705882352941177"/><rect class="i-qr" x="420.4" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="433.8" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="447.2" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="155.3" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="159.8" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="164.3" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="177.7" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="420.0" y="146.0" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="424.47058823529414" y="150.47058823529412" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="428.94117647058823" y="154.94117647058823" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/><rect class="i-qr" x="464.70588235294116" y="146.0" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="469.1764705882353" y="150.47058823529412" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="473.6470588235294" y="154.94117647058823" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/><rect class="i-qr" x="420.0" y="190.70588235294116" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="424.47058823529414" y="195.1764705882353" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="428.94117647058823" y="199.64705882352942" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/>
+<path class="i-viewfinder" d="M408 150V134H424"/>
+<path class="i-viewfinder" d="M508 150V134H492"/>
+<path class="i-viewfinder" d="M408 218V234H424"/>
+<path class="i-viewfinder" d="M508 218V234H492"/>
+<rect class="i-beam" x="410" y="140" width="96" height="2" rx="1"/>
+<g transform="translate(458 276)"><rect class="i-pill-g" x="-62" y="-16" width="124" height="32" rx="16"/><text class="i-chip-g" y="5">✓ Marked present</text></g>
+<text class="i-m" x="458" y="318">Student</text>
+<path class="i-link" d="M142 332 C142 370 230 380 244 396" marker-end="url(#ig-arrow)"/>
+<path class="i-link" d="M458 346 C458 376 370 380 356 396" marker-end="url(#ig-arrow)"/>
+<g transform="translate(300 418)"><rect class="i-card-hot" x="-70" y="-20" width="140" height="40" rx="20"/><text class="i-t" y="5">REST API</text></g>
+<path class="i-link" d="M300 438 V470" marker-end="url(#ig-arrow)"/>
+<g transform="translate(300 510)"><path class="i-cyl" d="M-44 -26 V26 A44 12 0 0 0 44 26 V-26"/><ellipse class="i-cyl-top" cx="0" cy="-26" rx="44" ry="12"/><path class="i-cyl-ring" d="M-44 0 A44 12 0 0 0 44 0"/><text class="i-m" y="66">MongoDB</text></g>
+<rect class="i-card" x="24" y="462" width="196" height="112" rx="14"/>
+<text class="i-m i-start" x="40" y="486">subject-wise</text>
+<rect class="i-bar" x="44" y="508" width="18" height="52" rx="4"/>
+<rect class="i-bar" x="76" y="522" width="18" height="38" rx="4"/>
+<rect class="i-bar-hot" x="108" y="500" width="18" height="60" rx="4"/>
+<rect class="i-bar" x="140" y="530" width="18" height="30" rx="4"/>
+<rect class="i-bar" x="172" y="514" width="18" height="46" rx="4"/>
+<rect class="i-card" x="380" y="462" width="196" height="112" rx="14"/>
+<text class="i-m i-start" x="396" y="486">separate logins</text>
+<rect class="i-pill-n" x="396" y="498" width="164" height="28" rx="14"/><path class="i-lock" d="M410 509h12v10h-12zM413 509v-4a3 3 0 0 1 6 0v4"/><text class="i-chip i-start" x="432" y="516.5">Student login</text>
+<rect class="i-pill-n" x="396" y="536" width="164" height="28" rx="14"/><path class="i-lock" d="M410 547h12v10h-12zM413 547v-4a3 3 0 0 1 6 0v4"/><text class="i-chip i-start" x="432" y="554.5">Admin login</text>
+</svg>
 </div>
 </div>
 
@@ -530,12 +781,45 @@ QR-code attendance app with separate student and admin logins and subject-wise t
 <article class="project reveal">
 
 <div class="project-media spotlight">
-<div class="browser">
-<div class="browser-bar">
-<span class="dots"><i></i><i></i><i></i></span>
-<span class="browser-url">kinglifts.vercel.app</span>
-</div>
-<img src="images/gym.webp" alt="PowerZone Gym website screenshot" loading="lazy" width="1600" height="827">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 490" role="img" aria-labelledby="gym-t gym-d">
+<title id="gym-t">PowerZone Gym website</title>
+<desc id="gym-d">A responsive gym website shown on desktop and mobile: a bold hero with a Join Now button, feature cards, and a BMI calculator that turns height and weight into a BMI result. Built with HTML5, CSS3 and JavaScript with smooth animations.</desc>
+<rect width="600" height="490" fill="url(#ig-grid)"/>
+<rect class="i-card" x="20" y="40" width="440" height="330" rx="16"/>
+<path class="i-divider" d="M20 74 H460"/>
+<circle class="i-dot-r" cx="40" cy="57" r="5"/><circle class="i-dot-y" cx="56" cy="57" r="5"/><circle class="i-dot-g" cx="72" cy="57" r="5"/>
+<rect class="i-url" x="150" y="47" width="200" height="20" rx="8"/><text class="i-m" x="250" y="61">kinglifts.vercel.app</text>
+<rect class="i-hero" x="32" y="86" width="416" height="180" rx="12"/>
+<text class="i-brand i-start" x="50" y="112">POWERZONE</text>
+<path class="i-sk" d="M290 108h24"/>
+<path class="i-sk" d="M330 108h24"/>
+<path class="i-sk" d="M370 108h24"/>
+<path class="i-sk" d="M410 108h24"/>
+<text class="i-hero-t i-start" x="50" y="170">TRANSFORM</text>
+<text class="i-hero-t i-start" x="50" y="204">YOUR BODY</text>
+<rect class="i-cta" x="50" y="222" width="104" height="30" rx="8"/><text class="i-cta-t" x="102" y="241.5">Join Now</text>
+<g class="i-weights"><rect x="300" y="166" width="120" height="8" rx="4"/><rect x="292" y="146" width="14" height="48" rx="4"/><rect x="414" y="146" width="14" height="48" rx="4"/><rect x="282" y="154" width="10" height="32" rx="3"/><rect x="428" y="154" width="10" height="32" rx="3"/></g>
+<rect class="i-feat" x="32" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="52" cy="302" r="9"/><path class="i-sk" d="M46 326h90M46 340h60"/>
+<rect class="i-feat" x="174" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="194" cy="302" r="9"/><path class="i-sk" d="M188 326h90M188 340h60"/>
+<rect class="i-feat" x="316" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="336" cy="302" r="9"/><path class="i-sk" d="M330 326h90M330 340h60"/>
+<rect class="i-phone" x="404" y="132" width="176" height="340" rx="28"/>
+<rect class="i-screen" x="414" y="142" width="156" height="320" rx="20"/>
+<rect class="i-notch" x="468" y="148" width="48" height="10" rx="5"/>
+<text class="i-t" x="492" y="184">BMI Calculator</text>
+<text class="i-m i-start" x="428" y="206">Height</text><rect class="i-input" x="428" y="212" width="128" height="28" rx="8"/><text class="i-val i-start" x="440" y="231">175 cm</text>
+<text class="i-m i-start" x="428" y="254">Weight</text><rect class="i-input" x="428" y="260" width="128" height="28" rx="8"/><text class="i-val i-start" x="440" y="279">68 kg</text>
+<rect class="i-cta" x="428" y="304" width="128" height="30" rx="8"/><text class="i-cta-t" x="492" y="323.5">Calculate</text>
+<text class="i-bmi" x="492" y="378">22.2</text>
+<text class="i-chip-g" x="492" y="398">Normal</text>
+<rect class="i-gauge" x="430" y="414" width="124" height="8" rx="4"/>
+<circle class="i-gauge-dot" cx="470" cy="418" r="7"/>
+<text class="i-m" x="492" y="446">height ↔ weight → BMI</text>
+<g transform="translate(82 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">Responsive</text></g>
+<g transform="translate(212 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">Smooth animations</text></g>
+<g transform="translate(342 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">BMI calculator</text></g>
+<text class="i-m" x="212" y="458">HTML5 · CSS3 · JavaScript</text>
+</svg>
 </div>
 </div>
 
