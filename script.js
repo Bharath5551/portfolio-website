@@ -130,7 +130,7 @@ const lightbox = document.querySelector(".lightbox");
 if (lightbox && typeof lightbox.showModal === "function") {
   const lbImg = lightbox.querySelector("img");
 
-  document.querySelectorAll(".certificate-thumb").forEach((btn) => {
+  document.querySelectorAll(".certificate-thumb, .diagram-frame").forEach((btn) => {
     btn.addEventListener("click", () => {
       const img = btn.querySelector("img");
       lbImg.src = btn.dataset.full;
@@ -145,7 +145,7 @@ if (lightbox && typeof lightbox.showModal === "function") {
     if (e.target === lightbox) lightbox.close();
   });
 } else {
-  document.querySelectorAll(".certificate-thumb").forEach((btn) => {
+  document.querySelectorAll(".certificate-thumb, .diagram-frame").forEach((btn) => {
     btn.addEventListener("click", () => window.open(btn.dataset.full, "_blank", "noopener"));
   });
 }
