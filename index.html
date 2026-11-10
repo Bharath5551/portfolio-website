@@ -6,94 +6,218 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bharath S Marambeed | Portfolio</title>
+<title>Bharath S Marambeed | Software Developer &amp; Generative AI Developer</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Bharath S Marambeed – Software Developer &amp; Generative AI Developer. Builds backend services, REST APIs, real-time web and Android apps, plus AI agents, RAG systems and NLP models.">
+<meta property="og:title" content="Bharath S Marambeed | Software Developer &amp; Generative AI Developer">
+<meta property="og:description" content="Software and generative AI projects – web, Android, REST APIs, and CASPER, an autonomous AI agent.">
+<meta property="og:url" content="https://bharathmportfolio.vercel.app/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2307080c%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 font-family=%22Arial%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%234ade80%22%3EBM%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>document.documentElement.classList.add("js");</script>
 
 </head>
 
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<svg class="ill-defs" width="0" height="0" aria-hidden="true" focusable="false">
+<defs>
+<pattern id="ig-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)"/></pattern>
+<radialGradient id="ig-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#4ade80" stop-opacity=".3"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/></radialGradient>
+<linearGradient id="ig-db" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14261d"/><stop offset=".5" stop-color="#1c3a2a"/><stop offset="1" stop-color="#14261d"/></linearGradient>
+<linearGradient id="ig-hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1d26"/><stop offset="1" stop-color="#2a1416"/></linearGradient>
+<linearGradient id="ig-gauge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa"/><stop offset=".45" stop-color="#4ade80"/><stop offset=".75" stop-color="#fbbf24"/><stop offset="1" stop-color="#f87171"/></linearGradient>
+<marker id="ig-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ig-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ig-arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#f87171" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+</svg>
+
+<div class="backdrop" aria-hidden="true">
+<div class="backdrop-grid"></div>
+<div class="backdrop-glow glow-a"></div>
+<div class="backdrop-glow glow-b"></div>
+<div class="backdrop-noise"></div>
+</div>
+
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar">
+<header class="navbar">
 
-<div class="logo">Bharath.</div>
+<nav class="nav-inner" aria-label="Primary">
 
-<ul class="nav-links">
+<a href="#home" class="logo" aria-label="Bharath S Marambeed – home">
+<span class="logo-mark">BM</span>
+<span class="logo-text">Bharath<span class="logo-dot">.</span></span>
+</a>
 
+<ul class="nav-links" id="nav-links">
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#internships">Internships</a></li>
+<li><a href="#projects">AI Projects</a></li>
+<li><a href="#web-projects">Software Projects</a></li>
+<li><a href="#internships">Experience</a></li>
 <li><a href="#certifications">Certificates</a></li>
 <li><a href="#contact">Contact</a></li>
-
+<li class="nav-cta-mobile"><a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a></li>
 </ul>
+
+<a class="nav-cta" href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+Resume
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+<span></span><span></span>
+</button>
 
 </nav>
 
+</header>
+
+<main id="main">
+
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div class="hero-content">
+<div class="hero-copy">
 
-<h1>
-Hi, I'm <span>Bharath</span>
-</h1>
-
-<h2>Software Developer & Full Stack Developer</h2>
-
-<p>
-Building modern web applications using JavaScript, Node.js, Express.js, MongoDB, and Java.
-Passionate about backend development, scalable systems, and creating responsive user experiences.
+<p class="badge reveal">
+<span class="badge-dot"></span>
+Open to software development &amp; Gen AI internships · Can start right away
 </p>
 
-<div class="hero-buttons">
+<p class="hero-hello reveal">Hi, I'm <strong>Bharath S Marambeed</strong></p>
 
-<a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing"
-target="_blank"
-class="btn">
-Resume
+<h1 class="hero-title reveal">
+Software Developer<br>
+<span class="amp">&amp;</span> Generative&nbsp;<em>AI</em><br>
+Developer
+</h1>
+
+<p class="hero-lead reveal">
+Final-year CSE student building software end to end — Java and Node.js backends, REST APIs, real-time web and Android apps — and generative AI systems with LLMs, from an autonomous agent to a RAG assistant. Three internships in Java and Python.
+</p>
+
+<div class="hero-actions reveal">
+
+<a href="#projects" class="btn btn-primary">
+View projects
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
 </a>
 
-<a href="https://github.com/Bharath5551"
-target="_blank"
-class="btn-outline">
-GitHub
+<a href="https://drive.google.com/file/d/1_I1sfTec0dO9A9qLCDuU9V-JLFVPWNDY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+Resume
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+</a>
+
+<a href="https://github.com/Bharath5551" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub profile">
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
 </a>
 
 </div>
+
+<dl class="hero-stats reveal">
+<div><dt>Projects</dt><dd>06</dd></div>
+<div><dt>Internships</dt><dd>03</dd></div>
+<div><dt>CGPA</dt><dd>8.0</dd></div>
+</dl>
+
+</div>
+
+<div class="hero-visual reveal" aria-hidden="true">
+
+<div class="code-card spotlight">
+
+<div class="code-head">
+<span class="dots"><i></i><i></i><i></i></span>
+<span class="code-file">bharath.py</span>
+</div>
+
+<pre class="code-body"><code><span class="v">bharath</span> <span class="p">=</span> <span class="k">Developer</span>(
+    <span class="a">roles</span><span class="p">=</span>[<span class="s">"Software Developer"</span>,
+           <span class="s">"Gen AI Developer"</span>],
+    <span class="a">builds</span><span class="p">=</span>[<span class="s">"Web"</span>, <span class="s">"APIs"</span>, <span class="s">"Agents"</span>, <span class="s">"RAG"</span>],
+    <span class="a">stack</span><span class="p">=</span>[<span class="s">"Java"</span>, <span class="s">"Node.js"</span>, <span class="s">"Python"</span>],
+    <span class="a">data</span><span class="p">=</span>[<span class="s">"MongoDB"</span>, <span class="s">"ChromaDB"</span>],
+    <span class="a">flagship</span><span class="p">=</span><span class="s">"CASPER"</span>,
+)
+
+<span class="v">bharath</span>.<span class="k">build</span>().<span class="k">ship</span>().<span class="k">learn</span>()<span class="caret"></span></code></pre>
+
+</div>
+
+<div class="float-chip chip-a"><span class="chip-dot"></span>LLMs · RAG · Agents</div>
+<div class="float-chip chip-b"><span class="chip-dot blue"></span>Backend · REST APIs</div>
 
 </div>
 
 </section>
 
+<!-- ================= MARQUEE ================= -->
+
+<div class="marquee" aria-label="Technologies">
+<div class="marquee-track">
+<ul>
+<li>Java</li><li>Python</li><li>Node.js</li><li>LangChain</li><li>Spring Boot</li><li>RAG</li><li>Express.js</li><li>ChromaDB</li><li>MongoDB</li><li>PyTorch</li><li>REST APIs</li><li>Hugging Face</li><li>Docker</li><li>AI Agents</li><li>TypeScript</li><li>Socket.IO</li>
+</ul>
+<ul aria-hidden="true">
+<li>Java</li><li>Python</li><li>Node.js</li><li>LangChain</li><li>Spring Boot</li><li>RAG</li><li>Express.js</li><li>ChromaDB</li><li>MongoDB</li><li>PyTorch</li><li>REST APIs</li><li>Hugging Face</li><li>Docker</li><li>AI Agents</li><li>TypeScript</li><li>Socket.IO</li>
+</ul>
+</div>
+</div>
+
 <!-- ================= ABOUT ================= -->
 
 <section id="about" class="section">
 
-<h2 class="section-title">About Me</h2>
+<header class="section-head reveal">
+<span class="section-index">01</span>
+<h2 class="section-title">About <em>me</em></h2>
+</header>
 
-<div class="glass-card">
+<div class="about-grid">
+
+<p class="about-statement reveal">
+I build reliable <em>software</em> — and bring <em>AI</em> into it with LLMs, agents and RAG.
+</p>
+
+<div class="about-body reveal">
 
 <p>
-I'm a Computer Science Engineering student at Srinivas University with internship experience in Software Development, Java, Python, and Full Stack Web Development.
+I'm a final-year Computer Science Engineering student and a software developer who works on both sides: backend services, REST APIs, real-time web apps and Android apps with Java, Node.js and MongoDB — and generative AI systems built with LLMs.
 </p>
 
 <p>
-I build Android applications, REST APIs, real-time web applications, and responsive websites using Java, JavaScript, Node.js, Express.js, MongoDB, Socket.IO, and modern frontend technologies.
+My main AI project, CASPER, is an autonomous agent I've been building on my own, and I've also made a RAG study assistant and a toxicity detection model. Three internships in Java and Python taught me how real teams ship and debug code.
 </p>
 
 <p>
-My focus is on writing clean, maintainable code and building applications that solve real-world problems.
+I'm looking for a full-time, on-site software development or generative AI internship and can start right away, anywhere in India.
 </p>
+
+<ul class="about-facts">
+<li><span>Education</span>B.Tech, Computer Science Engineering — Srinivas University, Mangalore · 2023 – 2027 · CGPA 8.0/10</li>
+<li><span>Location</span>Bangalore, Karnataka · open to anywhere in India</li>
+<li><span>Looking for</span>Full-time, on-site software development or generative AI internship</li>
+<li><span>Software</span>Backend services, REST APIs, real-time web &amp; Android apps</li>
+<li><span>Gen AI</span>AI agents, RAG, NLP</li>
+</ul>
+
+</div>
 
 </div>
 
@@ -103,135 +227,616 @@ My focus is on writing clean, maintainable code and building applications that s
 
 <section id="skills" class="section">
 
-<h2 class="section-title">Technical Skills</h2>
+<header class="section-head reveal">
+<span class="section-index">02</span>
+<h2 class="section-title">Technical <em>skills</em></h2>
+</header>
 
 <div class="skills-grid">
 
-<div class="skill-card">
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
 <h3>Languages</h3>
-<p>Java, JavaScript, Python</p>
-</div>
+<ul class="tags"><li>Python</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li></ul>
+</article>
 
-<div class="skill-card">
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg></div>
+<h3>Backend &amp; Tools</h3>
+<ul class="tags"><li>REST APIs</li><li>Node.js</li><li>Express.js</li><li>Spring Boot</li><li>MongoDB</li><li>Docker</li><li>Git</li><li>Streamlit</li><li>Vercel</li></ul>
+</article>
+
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div>
 <h3>Frontend</h3>
-<p>HTML5, CSS3, Responsive Design</p>
-</div>
+<ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li></ul>
+</article>
 
-<div class="skill-card">
-<h3>Backend</h3>
-<p>Node.js, Express.js, REST APIs, Socket.IO</p>
-</div>
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.8 1.9 1.9.8-1.9.8L19 20.4l-.8-1.9-1.9-.8 1.9-.8z"/></svg></div>
+<h3>Generative AI</h3>
+<ul class="tags"><li>Prompt Engineering</li><li>RAG</li><li>LangChain</li><li>ChromaDB</li><li>LLM APIs</li><li>AI Agents</li><li>Hugging Face Transformers</li></ul>
+</article>
 
-<div class="skill-card">
-<h3>Database & Tools</h3>
-<p>MongoDB, Git, GitHub, Android Studio, VS Code</p>
-</div>
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><path d="M7 6.8 10.2 11M7 17.2l3.2-4.2M14 12h3"/></svg></div>
+<h3>Machine Learning</h3>
+<ul class="tags"><li>PyTorch</li><li>NLP</li><li>Text Classification</li><li>Model Evaluation</li><li>Embeddings</li></ul>
+</article>
+
+<article class="skill-card spotlight reveal">
+<div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/></svg></div>
+<h3>CS Fundamentals</h3>
+<ul class="tags"><li>Data Structures</li><li>OOP</li><li>Debugging</li><li>SDLC</li></ul>
+</article>
 
 </div>
 
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- ================= AI PROJECTS ================= -->
 
 <section id="projects" class="section">
 
-<h2 class="section-title">Projects</h2>
+<header class="section-head reveal">
+<span class="section-index">03</span>
+<h2 class="section-title">AI <em>projects</em></h2>
+</header>
 
-<div class="projects-grid">
+<div class="projects">
+
+<!-- CASPER -->
+
+<article class="project project-featured reveal">
+
+<div class="project-media spotlight">
+<div class="casper-visual">
+<svg class="casper-svg" viewBox="0 0 600 640" role="img" aria-labelledby="casper-svg-title casper-svg-desc">
+<title id="casper-svg-title">CASPER agent loop</title>
+<desc id="casper-svg-desc">A spoken goal, "CASPER, handle this", flows into the CASPER core, which runs a loop: goal, plan, execute, verify, remember. It works across any app, and risky actions wait for the user's approval.</desc>
+<defs>
+<radialGradient id="cv-core" cx="50%" cy="40%" r="60%">
+<stop offset="0" stop-color="#1f3b2b"/>
+<stop offset=".65" stop-color="#0f1a15"/>
+<stop offset="1" stop-color="#0b0e12"/>
+</radialGradient>
+<radialGradient id="cv-glow" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#4ade80" stop-opacity=".35"/>
+<stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="cv-ring" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#4ade80"/>
+<stop offset="1" stop-color="#60a5fa"/>
+</linearGradient>
+<pattern id="cv-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+<path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)"/>
+</pattern>
+</defs>
+
+<rect width="600" height="640" fill="url(#cv-grid)"/>
+
+<!-- any-app corners -->
+<g class="cv-apps">
+<g transform="translate(64 214)"><rect x="-44" y="-15" width="88" height="30" rx="8"/><text y="5">VS Code</text></g>
+<g transform="translate(536 214)"><rect x="-44" y="-15" width="88" height="30" rx="8"/><text y="5">Chrome</text></g>
+<g transform="translate(64 430)"><rect x="-44" y="-15" width="88" height="30" rx="8"/><text y="5">Terminal</text></g>
+<g transform="translate(536 430)"><rect x="-44" y="-15" width="88" height="30" rx="8"/><text y="5">Finder</text></g>
+</g>
+
+<!-- spoken goal -->
+<g class="cv-voice" transform="translate(300 52)">
+<rect x="-148" y="-26" width="296" height="52" rx="26"/>
+<g class="cv-wave" transform="translate(-118 0)">
+<rect x="0" y="-6" width="3" height="12" rx="1.5"/><rect x="6" y="-11" width="3" height="22" rx="1.5"/><rect x="12" y="-4" width="3" height="8" rx="1.5"/><rect x="18" y="-9" width="3" height="18" rx="1.5"/>
+</g>
+<text x="12" y="6">“CASPER, handle this.”</text>
+</g>
+<path class="cv-link" d="M300 78 V127.0"/>
+
+<!-- loop -->
+<circle cx="300" cy="322" r="172" class="cv-ring"/>
+<circle cx="300" cy="322" r="172" class="cv-ring-flow"/>
+<path class="cv-chev" d="M-5 -6 L3 0 L-5 6" transform="translate(401.1 182.8) rotate(36)"/>
+<path class="cv-chev" d="M-5 -6 L3 0 L-5 6" transform="translate(463.6 375.2) rotate(108)"/>
+<path class="cv-chev" d="M-5 -6 L3 0 L-5 6" transform="translate(300.0 494.0) rotate(180)"/>
+<path class="cv-chev" d="M-5 -6 L3 0 L-5 6" transform="translate(136.4 375.2) rotate(252)"/>
+<path class="cv-chev" d="M-5 -6 L3 0 L-5 6" transform="translate(198.9 182.8) rotate(324)"/>
+
+<circle class="cv-runner" r="5">
+<animateMotion dur="9s" repeatCount="indefinite" path="M300 150 A172 172 0 1 1 299.99 150"/>
+</circle>
+
+<!-- core -->
+<circle cx="300" cy="322" r="130" fill="url(#cv-glow)"/>
+<g class="cv-orbit"><circle cx="300" cy="322" r="104"/></g>
+<circle cx="300" cy="322" r="88" fill="url(#cv-core)" class="cv-core"/>
+<text class="cv-core-title" x="300" y="326">CASPER</text>
+<text class="cv-core-sub" x="300" y="350">observe · reason · act</text>
+
+<g class="cv-node" transform="translate(300.0 150.0)">
+<rect x="-68.0" y="-23.0" width="136" height="46" rx="23"/>
+<text class="cv-num" x="-48.0" y="5">01</text>
+<text class="cv-label" x="-22.0" y="6">Goal</text>
+</g>
+<g class="cv-node" transform="translate(463.6 268.8)">
+<rect x="-68.0" y="-23.0" width="136" height="46" rx="23"/>
+<text class="cv-num" x="-48.0" y="5">02</text>
+<text class="cv-label" x="-22.0" y="6">Plan</text>
+</g>
+<g class="cv-node" transform="translate(401.1 461.2)">
+<rect x="-68.0" y="-23.0" width="136" height="46" rx="23"/>
+<text class="cv-num" x="-48.0" y="5">03</text>
+<text class="cv-label" x="-22.0" y="6">Execute</text>
+</g>
+<g class="cv-node" transform="translate(198.9 461.2)">
+<rect x="-68.0" y="-23.0" width="136" height="46" rx="23"/>
+<text class="cv-num" x="-48.0" y="5">04</text>
+<text class="cv-label" x="-22.0" y="6">Verify</text>
+</g>
+<g class="cv-node" transform="translate(136.4 268.8)">
+<rect x="-68.0" y="-23.0" width="136" height="46" rx="23"/>
+<text class="cv-num" x="-48.0" y="5">05</text>
+<text class="cv-label" x="-22.0" y="6">Remember</text>
+</g>
+
+<!-- footer facts -->
+<g class="cv-facts" transform="translate(0 590)">
+<g transform="translate(150 0)"><rect x="-136" y="-20" width="272" height="40" rx="20"/><path class="cv-shield" d="M-112 -9 l9 -4 9 4 v6 c0 6 -4 10 -9 12 c-5 -2 -9 -6 -9 -12z"/><text x="10" y="5">Risky actions ask first</text></g>
+<g transform="translate(450 0)"><rect x="-136" y="-20" width="272" height="40" rx="20"/><circle class="cv-dot" cx="-110" cy="0" r="5"/><text x="10" y="5">Local-first · Nemotron</text></g>
+</g>
+</svg>
+</div>
+</div>
+
+<div class="project-info">
+<span class="project-num">01 / Flagship · Autonomous AI Agent</span>
+<h3>CASPER</h3>
+<p class="project-sub">Cognitive Autonomous System for Personal Execution and Reasoning</p>
+<ul class="project-points">
+<li>Built a local-first AI agent that takes a goal, then plans, executes, verifies and remembers the result end to end.</li>
+<li>Uses NVIDIA Nemotron as the reasoning model, with prompts I designed for planning and tool use.</li>
+<li>Added a safety layer: high-risk actions pause for user approval through a desktop dialog.</li>
+</ul>
+<ol class="flow" aria-label="CASPER execution loop">
+<li>Goal</li><li>Plan</li><li>Execute</li><li>Verify</li><li>Remember</li>
+</ol>
+<ul class="tags"><li>TypeScript</li><li>LLMs</li><li>Prompt Engineering</li><li>NVIDIA Nemotron</li></ul>
+</div>
+
+</article>
+
+<!-- STUDY ASSISTANT -->
+
+<article class="project project-flip reveal">
+
+<div class="project-media spotlight">
+<div class="rag-visual">
+<svg class="rag-svg" viewBox="0 0 600 640" role="img" aria-labelledby="rag-svg-title rag-svg-desc">
+<title id="rag-svg-title">Study Assistant RAG pipeline</title>
+<desc id="rag-svg-desc">A student's question and their PDF course notes are turned into Hugging Face embeddings stored in ChromaDB. The most relevant chunks are retrieved and passed to Llama 3.1 on Groq, which writes a grounded answer that cites the exact file and page, and says so when the notes don't cover the question.</desc>
+<defs>
+<pattern id="rv-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+<path d="M30 0H0V30" fill="none" stroke="rgba(255,255,255,0.04)"/>
+</pattern>
+<radialGradient id="rv-glow" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#4ade80" stop-opacity=".3"/>
+<stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rv-db" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#14261d"/>
+<stop offset=".5" stop-color="#1c3a2a"/>
+<stop offset="1" stop-color="#14261d"/>
+</linearGradient>
+<marker id="rv-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M1 1 L8 5 L1 9" fill="none" stroke="#4ade80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<rect width="600" height="640" fill="url(#rv-grid)"/>
+
+<!-- question -->
+<g class="rv-question" transform="translate(300 52)">
+<rect x="-176" y="-26" width="352" height="52" rx="26"/>
+<text x="0" y="7">“Explain deadlock from my OS notes.”</text>
+</g>
+<path class="rv-link rv-link-blue" d="M300 78 V174" marker-end="url(#rv-arrow)"/>
+
+<!-- notes -->
+<g class="rv-docs" transform="translate(104 228)">
+<g transform="translate(10 -12) rotate(6)"><rect x="-34" y="-44" width="68" height="88" rx="6"/></g>
+<g transform="translate(5 -6) rotate(3)"><rect x="-34" y="-44" width="68" height="88" rx="6"/></g>
+<g class="rv-doc-front">
+<rect x="-34" y="-44" width="68" height="88" rx="6"/>
+<rect class="rv-pdf" x="-24" y="-34" width="28" height="14" rx="3"/>
+<text class="rv-pdf-text" x="-10" y="-23.5">PDF</text>
+<path d="M-24 -8H24M-24 2H18M-24 12H24M-24 22H10"/>
+</g>
+<text class="rv-caption" y="76">Course notes</text>
+</g>
+
+<path class="rv-link" d="M156 228 H218" marker-end="url(#rv-arrow)"/>
+
+<!-- embeddings -->
+<g class="rv-emb" transform="translate(300 228)">
+<rect class="rv-box" x="-72" y="-50" width="144" height="100" rx="14"/>
+<g class="rv-cells">
+<rect x="-56" y="-36" width="10" height="12" rx="2" style="opacity:0.5"/>
+<rect x="-42" y="-36" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-28" y="-36" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="-14" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="0" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="14" y="-36" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="28" y="-36" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="42" y="-36" width="10" height="12" rx="2" style="opacity:0.5"/>
+<rect x="-56" y="-18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-42" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-28" y="-18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-14" y="-18" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="0" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="14" y="-18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="28" y="-18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="42" y="-18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="-56" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-42" y="0" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-28" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-14" y="0" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="0" y="0" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="14" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="28" y="0" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="42" y="0" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-56" y="18" width="10" height="12" rx="2" style="opacity:0.3"/>
+<rect x="-42" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="-28" y="18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="-14" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="0" y="18" width="10" height="12" rx="2" style="opacity:1"/>
+<rect x="14" y="18" width="10" height="12" rx="2" style="opacity:0.75"/>
+<rect x="28" y="18" width="10" height="12" rx="2" style="opacity:0.15"/>
+<rect x="42" y="18" width="10" height="12" rx="2" style="opacity:0.3"/>
+</g>
+<text class="rv-caption" y="76">Embeddings</text>
+<text class="rv-sub" y="94">Hugging Face</text>
+</g>
+
+<path class="rv-link" d="M382 228 H436" marker-end="url(#rv-arrow)"/>
+
+<!-- vector store -->
+<g class="rv-store" transform="translate(494 228)">
+<path class="rv-cyl" d="M-50 -36 V36 A50 14 0 0 0 50 36 V-36"/>
+<ellipse class="rv-cyl-top" cx="0" cy="-36" rx="50" ry="14"/>
+<path class="rv-cyl-ring" d="M-50 -6 A50 14 0 0 0 50 -6M-50 18 A50 14 0 0 0 50 18"/>
+<text class="rv-caption" y="76">ChromaDB</text>
+<text class="rv-sub" y="94">vector store</text>
+</g>
+
+<!-- retrieval bus -->
+<path class="rv-link" d="M494 280 V358"/>
+<path class="rv-bus" d="M494 358 H160"/>
+<path class="rv-link" d="M160 358 V374" marker-end="url(#rv-arrow)"/>
+<path class="rv-link rv-hot" d="M300 358 V374" marker-end="url(#rv-arrow)"/>
+<path class="rv-link" d="M440 358 V374" marker-end="url(#rv-arrow)"/>
+<text class="rv-tag" x="484" y="350">top-k retrieval</text>
+
+<!-- chunks -->
+<g class="rv-chunk" transform="translate(160 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.4</text></g>
+<g class="rv-chunk rv-chunk-hot" transform="translate(300 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.12</text></g>
+<g class="rv-chunk" transform="translate(440 404)"><rect x="-62" y="-28" width="124" height="56" rx="10"/><path d="M-46 -8H38M-46 4H24"/><text x="-46" y="20">notes.pdf · p.13</text></g>
+
+<path class="rv-link" d="M160 432 Q160 452 238 466" marker-end="url(#rv-arrow)"/>
+<path class="rv-link rv-hot" d="M300 432 V452" marker-end="url(#rv-arrow)"/>
+<path class="rv-link" d="M440 432 Q440 452 362 466" marker-end="url(#rv-arrow)"/>
+
+<!-- llm -->
+<circle cx="300" cy="482" r="70" fill="url(#rv-glow)"/>
+<g class="rv-llm" transform="translate(300 482)">
+<rect x="-90" y="-26" width="180" height="52" rx="26"/>
+<text class="rv-llm-title" x="0" y="0">Llama 3.1</text>
+<text class="rv-llm-sub" x="0" y="16">via Groq · grounded prompt</text>
+</g>
+
+<g class="rv-side" transform="translate(76 482)"><rect x="-62" y="-17" width="124" height="34" rx="17"/><text y="5">Eval: accuracy</text></g>
+<g class="rv-side rv-side-warn" transform="translate(524 482)"><rect x="-62" y="-17" width="124" height="34" rx="17"/><text y="5">Not in notes? Says so</text></g>
+
+<path class="rv-link rv-hot" d="M300 508 V532" marker-end="url(#rv-arrow)"/>
+
+<!-- answer -->
+<g class="rv-answer" transform="translate(300 576)">
+<rect x="-190" y="-40" width="380" height="80" rx="16"/>
+<path class="rv-answer-lines" d="M-166 -16H120M-166 0H86"/>
+<g class="rv-cite" transform="translate(-102 22)"><rect x="-64" y="-11" width="128" height="22" rx="11"/><text y="4">↳ notes.pdf · p.12</text></g>
+<g class="rv-check" transform="translate(126 22)"><rect x="-44" y="-11" width="88" height="22" rx="11"/><text y="4">✓ grounded</text></g>
+</g>
+</svg>
+</div>
+</div>
+
+<div class="project-info">
+<span class="project-num">02 / RAG</span>
+<h3>Study Assistant</h3>
+<p class="project-sub">RAG over course notes</p>
+<ul class="project-points">
+<li>Answers questions from uploaded PDF notes and cites the exact file and page for every answer.</li>
+<li>Stores notes as Hugging Face embeddings in ChromaDB; the prompt keeps answers grounded and refuses when the notes don't cover it.</li>
+<li>Includes an evaluation script that measures answer accuracy and correct-page retrieval.</li>
+</ul>
+<ul class="tags"><li>Python</li><li>LangChain</li><li>ChromaDB</li><li>Groq Llama 3.1</li><li>Streamlit</li></ul>
+</div>
+
+</article>
+
+<!-- TOXICITY -->
+
+<article class="project reveal">
+
+<div class="project-media spotlight">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 600" role="img" aria-labelledby="tox-t tox-d">
+<title id="tox-t">Context-aware toxicity detection</title>
+<desc id="tox-d">The same message, "You're unbelievable.", appears in two conversations. A transformer reads each message together with its context and labels the friendly one not toxic and the hostile one toxic. Predictions run in real time in a Streamlit demo.</desc>
+<rect width="600" height="600" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="36">same message · different context</text>
+<rect class="i-card" x="30" y="56" width="255" height="236" rx="16"/>
+<text class="i-m i-start" x="48" y="82">context A</text>
+<g transform="translate(46 96)"><rect class="i-bub" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">I finished my first marathon!</text></g>
+<g transform="translate(63 144)"><rect class="i-bub-out" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">Under four hours, too.</text></g>
+<path class="i-bracket" d="M38 100 v84"/>
+<g transform="translate(46 214)"><rect class="i-tgt" width="223" height="46" rx="16"/><text class="i-msg-strong i-start" x="16" y="29">You're unbelievable.</text></g>
+<rect class="i-card" x="315" y="56" width="255" height="236" rx="16"/>
+<text class="i-m i-start" x="333" y="82">context B</text>
+<g transform="translate(331 96)"><rect class="i-bub" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">You broke my laptop again.</text></g>
+<g transform="translate(348 144)"><rect class="i-bub-out" width="206" height="38" rx="14"/><text class="i-msg i-start" x="14" y="24">And then laughed about it.</text></g>
+<path class="i-bracket" d="M323 100 v84"/>
+<g transform="translate(331 214)"><rect class="i-tgt" width="223" height="46" rx="16"/><text class="i-msg-strong i-start" x="16" y="29">You're unbelievable.</text></g>
+<path class="i-link" d="M157 292 C157 330 230 330 250 356" marker-end="url(#ig-arrow)"/>
+<path class="i-link" d="M442 292 C442 330 370 330 350 356" marker-end="url(#ig-arrow)"/>
+<rect class="i-layer" x="186" y="350" width="228" height="104" rx="14"/>
+<rect class="i-layer" x="178" y="356" width="244" height="104" rx="14"/>
+<rect class="i-card-hot" x="170" y="362" width="260" height="104" rx="14"/>
+<path class="i-attn" d="M206 392 Q263.0 357.48 320 392"/>
+<path class="i-attn" d="M244 392 Q320.0 350.64 396 392"/>
+<path class="i-attn" d="M282 392 Q320.0 364.32 358 392"/>
+<path class="i-attn" d="M206 392 Q244.0 364.32 282 392"/>
+<path class="i-attn" d="M320 392 Q358.0 364.32 396 392"/>
+<circle class="i-tok" cx="206" cy="394" r="6"/>
+<circle class="i-tok" cx="244" cy="394" r="6"/>
+<circle class="i-tok" cx="282" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="320" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="358" cy="394" r="6"/>
+<circle class="i-tok-hot" cx="396" cy="394" r="6"/>
+<text class="i-t" x="300" y="430">Transformer classifier</text>
+<text class="i-m" x="300" y="450">PyTorch · Hugging Face</text>
+<path class="i-link" d="M250 466 C230 490 157 490 157 506" marker-end="url(#ig-arrow)"/>
+<path class="i-link i-link-red" d="M350 466 C370 490 442 490 442 506" marker-end="url(#ig-arrow-red)"/>
+<g transform="translate(157 528)"><rect class="i-pill-g" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip-g" y="4.5">✓ not toxic</text></g>
+<g transform="translate(442 528)"><rect class="i-pill-r" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip-r" y="4.5">⚠ toxic</text></g>
+<g transform="translate(300 576)"><rect class="i-pill-n" x="-125.0" y="-15" width="250" height="30" rx="15"/><text class="i-chip" y="4.5">Streamlit demo · real-time</text></g>
+</svg>
+</div>
+</div>
+
+<div class="project-info">
+<span class="project-num">03 / NLP</span>
+<h3>Context-Aware Toxicity Detection</h3>
+<p class="project-sub">Judging a message by the conversation around it</p>
+<ul class="project-points">
+<li>Transformer model that judges whether a message is toxic using the conversation around it, not just the message alone.</li>
+<li>Built a Streamlit demo for real-time predictions.</li>
+</ul>
+<ul class="tags"><li>Python</li><li>PyTorch</li><li>Hugging Face Transformers</li><li>Streamlit</li></ul>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- ================= WEB & MOBILE PROJECTS ================= -->
+
+<section id="web-projects" class="section">
+
+<header class="section-head reveal">
+<span class="section-index">04</span>
+<h2 class="section-title">Software <em>projects</em></h2>
+</header>
+
+<div class="projects">
 
 <!-- CHAT APP -->
 
-<div class="project-card">
+<article class="project reveal">
 
-<div class="project-image-wrapper">
-
-<img src="images/chatapp.png" class="desktop-project-img">
-
+<div class="project-media spotlight">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 500" role="img" aria-labelledby="chat-t chat-d">
+<title id="chat-t">Real-time chat application</title>
+<desc id="chat-d">Two chat windows, for Bharath and Akash, exchange messages instantly through a Node.js and Express server running Socket.IO over WebSockets, with JWT authentication. The app is responsive and deployed on Vercel.</desc>
+<rect width="600" height="500" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="34">real-time · WebSockets</text>
+<rect class="i-card" x="20" y="56" width="184" height="320" rx="16"/>
+<path class="i-divider" d="M20 92 H204"/>
+<circle class="i-avatar" cx="42" cy="74" r="9"/><text class="i-avatar-t" x="42" y="78">B</text>
+<text class="i-t i-start" x="58" y="79">Bharath</text>
+<circle class="i-online" cx="186" cy="74" r="4"/>
+<rect class="i-bub" x="34" y="108" width="110" height="30" rx="12"/><path class="i-sk" d="M46 123H130"/>
+<rect class="i-bub-out" x="94" y="150" width="96" height="30" rx="12"/><path class="i-sk-g" d="M106 165H178"/>
+<rect class="i-bub" x="34" y="192" width="124" height="30" rx="12"/><path class="i-sk" d="M46 207H144"/>
+<rect class="i-bub-out" x="110" y="234" width="80" height="30" rx="12"/><path class="i-sk-g" d="M122 249H178"/>
+<rect class="i-bub" x="34" y="276" width="70" height="30" rx="12"/><path class="i-sk" d="M46 291H90"/>
+<rect class="i-input" x="32" y="334" width="128" height="28" rx="14"/><circle class="i-send" cx="178" cy="348" r="14"/><path class="i-send-ico" d="M172 348h11m-4-4 4 4-4 4"/>
+<rect class="i-card" x="396" y="56" width="184" height="320" rx="16"/>
+<path class="i-divider" d="M396 92 H580"/>
+<circle class="i-avatar" cx="418" cy="74" r="9"/><text class="i-avatar-t" x="418" y="78">A</text>
+<text class="i-t i-start" x="434" y="79">Akash</text>
+<circle class="i-online" cx="562" cy="74" r="4"/>
+<rect class="i-bub-out" x="456" y="108" width="110" height="30" rx="12"/><path class="i-sk-g" d="M468 123H554"/>
+<rect class="i-bub" x="410" y="150" width="96" height="30" rx="12"/><path class="i-sk" d="M422 165H492"/>
+<rect class="i-bub-out" x="442" y="192" width="124" height="30" rx="12"/><path class="i-sk-g" d="M454 207H554"/>
+<rect class="i-bub" x="410" y="234" width="80" height="30" rx="12"/><path class="i-sk" d="M422 249H476"/>
+<rect class="i-bub-out" x="496" y="276" width="70" height="30" rx="12"/><path class="i-sk-g" d="M508 291H554"/>
+<rect class="i-input" x="408" y="334" width="128" height="28" rx="14"/><circle class="i-send" cx="554" cy="348" r="14"/><path class="i-send-ico" d="M548 348h11m-4-4 4 4-4 4"/>
+<circle cx="300" cy="216" r="74" fill="url(#ig-glow)"/>
+<circle class="i-hub-ring" cx="300" cy="216" r="64"/>
+<circle class="i-hub" cx="300" cy="216" r="52"/>
+<text class="i-t" x="300" y="214">Socket.IO</text>
+<text class="i-m i-m-green" x="300" y="232">Node · Express</text>
+<path class="i-link" d="M206 196 H246" marker-end="url(#ig-arrow)"/>
+<path class="i-link i-link-blue" d="M246 236 H206" marker-end="url(#ig-arrow-blue)"/>
+<path class="i-link i-link-blue" d="M354 196 H394" marker-end="url(#ig-arrow-blue)"/>
+<path class="i-link" d="M394 236 H354" marker-end="url(#ig-arrow)"/>
+<circle class="i-runner" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M206 196 H246 A54 54 0 0 1 354 196 H394"/></circle>
+<circle class="i-runner i-runner-blue" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" path="M394 236 H354 A54 54 0 0 1 246 236 H206"/></circle>
+<g transform="translate(300 128)"><rect class="i-pill-g" x="-48" y="-15" width="96" height="30" rx="15"/><path class="i-lock" d="M-36 -3h11v9h-11zM-33.5 -3v-3.5a3 3 0 0 1 6 0v3.5"/><text class="i-chip-g" x="10" y="4.5">JWT auth</text></g>
+<path class="i-link" d="M300 143 V160"/>
+<g transform="translate(300 300)"><rect class="i-pill-n" x="-75.0" y="-15" width="150" height="30" rx="15"/><text class="i-chip" y="4.5">instant delivery</text></g>
+<g transform="translate(84 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Socket.IO</text></g>
+<g transform="translate(228 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">JWT login</text></g>
+<g transform="translate(372 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Responsive UI</text></g>
+<g transform="translate(516 438)"><rect class="i-pill-n" x="-64.0" y="-15" width="128" height="30" rx="15"/><text class="i-chip" y="4.5">Vercel</text></g>
+</svg>
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">01 / Web App</span>
 <h3>Real-Time Chat Application</h3>
-
 <p>
-Built a real-time messaging application using Node.js, Express.js, Socket.IO, WebSockets, and JWT Authentication. Supports instant communication with a responsive user interface.
+Live messaging over WebSockets with JWT login and a responsive UI, built with Node.js, Express.js and Socket.IO and deployed on Vercel.
 </p>
-
+<ul class="tags"><li>Node.js</li><li>Express.js</li><li>Socket.IO</li><li>JWT</li></ul>
 <div class="project-links">
-
-<a href="https://chat-real-project.vercel.app" target="_blank">Live</a>
-
-<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank">GitHub</a>
-
+<a href="https://chat-real-project.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/real-time-chat-app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 <!-- SMART ATTENDANCE -->
 
-<div class="project-card">
+<article class="project project-flip reveal">
 
-<div class="project-image-wrapper mobile-gallery">
-
-<img src="images/attendance1.png" class="mobile-project-img">
-
-<img src="images/attendance2.png" class="mobile-project-img">
-
-<img src="images/attendance3.png" class="mobile-project-img">
-
+<div class="project-media spotlight">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 600" role="img" aria-labelledby="att-t att-d">
+<title id="att-t">Smart Attendance System</title>
+<desc id="att-d">An admin generates a session QR code, a student scans it with the Android app and is marked present. Both apps use separate logins and talk to REST APIs backed by MongoDB, which keeps subject-wise attendance.</desc>
+<rect width="600" height="600" fill="url(#ig-grid)"/>
+<text class="i-ma" x="300" y="34">QR attendance · Android</text>
+<rect class="i-card" x="24" y="56" width="236" height="276" rx="16"/>
+<path class="i-shield" d="M46 72 l9 -4 9 4 v6 c0 6 -4 10 -9 12 c-5 -2 -9 -6 -9 -12z"/>
+<text class="i-t i-start" x="74" y="85">Admin</text>
+<text class="i-m i-start" x="74" y="102">session QR</text>
+<rect class="i-qr-bg" x="66.0" y="138.0" width="152.0" height="152.0" rx="12.0"/><rect class="i-qr" x="74.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="98.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="122.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="162.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="170.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="178.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="202.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="138.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="146.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="154.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="162.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="170.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="178.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="218.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="242.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="186.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="194.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="210.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="226.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="234.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="250.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="258.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="266.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="202.4" y="274.4" width="7.2" height="7.2" rx="1"/><rect class="i-qr" x="74.0" y="146.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="82.0" y="154.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="90.0" y="162.0" width="24.0" height="24.0" rx="4.0"/><rect class="i-qr" x="154.0" y="146.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="162.0" y="154.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="170.0" y="162.0" width="24.0" height="24.0" rx="4.0"/><rect class="i-qr" x="74.0" y="226.0" width="56.0" height="56.0" rx="8.0"/><rect class="i-qr-bg" x="82.0" y="234.0" width="40.0" height="40.0" rx="4.8"/><rect class="i-qr" x="90.0" y="242.0" width="24.0" height="24.0" rx="4.0"/>
+<path class="i-link i-link-blue" d="M266 214 H364" marker-end="url(#ig-arrow-blue)"/>
+<text class="i-m i-m-blue" x="315" y="204">scan</text>
+<rect class="i-phone" x="372" y="46" width="172" height="300" rx="28"/>
+<rect class="i-screen" x="382" y="56" width="152" height="280" rx="20"/>
+<rect class="i-notch" x="434" y="62" width="48" height="10" rx="5"/>
+<text class="i-t" x="458" y="98">Scan QR</text>
+<rect class="i-qr-bg" x="415.52941176470586" y="141.52941176470588" width="84.94117647058823" height="84.94117647058823" rx="6.705882352941177"/><rect class="i-qr" x="420.4" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="433.8" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="447.2" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="155.3" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="159.8" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="164.3" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="177.7" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="456.2" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="460.6" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="465.1" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="469.6" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="474.0" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="478.5" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="186.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="200.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="483.0" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="487.5" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="182.2" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="191.1" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="195.6" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="204.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="209.0" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="213.5" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="491.9" y="217.9" width="3.7" height="3.7" rx="1"/><rect class="i-qr" x="420.0" y="146.0" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="424.47058823529414" y="150.47058823529412" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="428.94117647058823" y="154.94117647058823" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/><rect class="i-qr" x="464.70588235294116" y="146.0" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="469.1764705882353" y="150.47058823529412" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="473.6470588235294" y="154.94117647058823" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/><rect class="i-qr" x="420.0" y="190.70588235294116" width="31.294117647058826" height="31.294117647058826" rx="4.470588235294118"/><rect class="i-qr-bg" x="424.47058823529414" y="195.1764705882353" width="22.352941176470587" height="22.352941176470587" rx="2.6823529411764704"/><rect class="i-qr" x="428.94117647058823" y="199.64705882352942" width="13.411764705882353" height="13.411764705882353" rx="2.235294117647059"/>
+<path class="i-viewfinder" d="M408 150V134H424"/>
+<path class="i-viewfinder" d="M508 150V134H492"/>
+<path class="i-viewfinder" d="M408 218V234H424"/>
+<path class="i-viewfinder" d="M508 218V234H492"/>
+<rect class="i-beam" x="410" y="140" width="96" height="2" rx="1"/>
+<g transform="translate(458 276)"><rect class="i-pill-g" x="-62" y="-16" width="124" height="32" rx="16"/><text class="i-chip-g" y="5">✓ Marked present</text></g>
+<text class="i-m" x="458" y="318">Student</text>
+<path class="i-link" d="M142 332 C142 370 230 380 244 396" marker-end="url(#ig-arrow)"/>
+<path class="i-link" d="M458 346 C458 376 370 380 356 396" marker-end="url(#ig-arrow)"/>
+<g transform="translate(300 418)"><rect class="i-card-hot" x="-70" y="-20" width="140" height="40" rx="20"/><text class="i-t" y="5">REST API</text></g>
+<path class="i-link" d="M300 438 V470" marker-end="url(#ig-arrow)"/>
+<g transform="translate(300 510)"><path class="i-cyl" d="M-44 -26 V26 A44 12 0 0 0 44 26 V-26"/><ellipse class="i-cyl-top" cx="0" cy="-26" rx="44" ry="12"/><path class="i-cyl-ring" d="M-44 0 A44 12 0 0 0 44 0"/><text class="i-m" y="66">MongoDB</text></g>
+<rect class="i-card" x="24" y="462" width="196" height="112" rx="14"/>
+<text class="i-m i-start" x="40" y="486">subject-wise</text>
+<rect class="i-bar" x="44" y="508" width="18" height="52" rx="4"/>
+<rect class="i-bar" x="76" y="522" width="18" height="38" rx="4"/>
+<rect class="i-bar-hot" x="108" y="500" width="18" height="60" rx="4"/>
+<rect class="i-bar" x="140" y="530" width="18" height="30" rx="4"/>
+<rect class="i-bar" x="172" y="514" width="18" height="46" rx="4"/>
+<rect class="i-card" x="380" y="462" width="196" height="112" rx="14"/>
+<text class="i-m i-start" x="396" y="486">separate logins</text>
+<rect class="i-pill-n" x="396" y="498" width="164" height="28" rx="14"/><path class="i-lock" d="M410 509h12v10h-12zM413 509v-4a3 3 0 0 1 6 0v4"/><text class="i-chip i-start" x="432" y="516.5">Student login</text>
+<rect class="i-pill-n" x="396" y="536" width="164" height="28" rx="14"/><path class="i-lock" d="M410 547h12v10h-12zM413 547v-4a3 3 0 0 1 6 0v4"/><text class="i-chip i-start" x="432" y="554.5">Admin login</text>
+</svg>
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">02 / Android App</span>
 <h3>Smart Attendance System</h3>
-
 <p>
-Android application built using Java, Android Studio, MongoDB, and REST APIs. Features QR-code attendance, secure student/admin login, and attendance management.
+QR-code attendance app with separate student and admin logins and subject-wise tracking, built with Java, Android Studio, MongoDB and REST APIs.
 </p>
-
+<ul class="tags"><li>Java</li><li>Android</li><li>MongoDB</li><li>REST APIs</li></ul>
 <div class="project-links">
-
-<a href="https://websites-for-smartattendence.vercel.app/" target="_blank">Live</a>
-
-<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank">GitHub</a>
-
+<a href="https://websites-for-smartattendence.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/smart-attendance-backend" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 <!-- GYM -->
 
-<div class="project-card">
+<article class="project reveal">
 
-<div class="project-image-wrapper">
-
-<img src="images/gym.png" class="desktop-project-img">
-
+<div class="project-media spotlight">
+<div class="ill">
+<svg class="ill-svg" viewBox="0 0 600 490" role="img" aria-labelledby="gym-t gym-d">
+<title id="gym-t">PowerZone Gym website</title>
+<desc id="gym-d">A responsive gym website shown on desktop and mobile: a bold hero with a Join Now button, feature cards, and a BMI calculator that turns height and weight into a BMI result. Built with HTML5, CSS3 and JavaScript with smooth animations.</desc>
+<rect width="600" height="490" fill="url(#ig-grid)"/>
+<rect class="i-card" x="20" y="40" width="440" height="330" rx="16"/>
+<path class="i-divider" d="M20 74 H460"/>
+<circle class="i-dot-r" cx="40" cy="57" r="5"/><circle class="i-dot-y" cx="56" cy="57" r="5"/><circle class="i-dot-g" cx="72" cy="57" r="5"/>
+<rect class="i-url" x="150" y="47" width="200" height="20" rx="8"/><text class="i-m" x="250" y="61">kinglifts.vercel.app</text>
+<rect class="i-hero" x="32" y="86" width="416" height="180" rx="12"/>
+<text class="i-brand i-start" x="50" y="112">POWERZONE</text>
+<path class="i-sk" d="M290 108h24"/>
+<path class="i-sk" d="M330 108h24"/>
+<path class="i-sk" d="M370 108h24"/>
+<path class="i-sk" d="M410 108h24"/>
+<text class="i-hero-t i-start" x="50" y="170">TRANSFORM</text>
+<text class="i-hero-t i-start" x="50" y="204">YOUR BODY</text>
+<rect class="i-cta" x="50" y="222" width="104" height="30" rx="8"/><text class="i-cta-t" x="102" y="241.5">Join Now</text>
+<g class="i-weights"><rect x="300" y="166" width="120" height="8" rx="4"/><rect x="292" y="146" width="14" height="48" rx="4"/><rect x="414" y="146" width="14" height="48" rx="4"/><rect x="282" y="154" width="10" height="32" rx="3"/><rect x="428" y="154" width="10" height="32" rx="3"/></g>
+<rect class="i-feat" x="32" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="52" cy="302" r="9"/><path class="i-sk" d="M46 326h90M46 340h60"/>
+<rect class="i-feat" x="174" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="194" cy="302" r="9"/><path class="i-sk" d="M188 326h90M188 340h60"/>
+<rect class="i-feat" x="316" y="280" width="130" height="76" rx="10"/><circle class="i-feat-ico" cx="336" cy="302" r="9"/><path class="i-sk" d="M330 326h90M330 340h60"/>
+<rect class="i-phone" x="404" y="132" width="176" height="340" rx="28"/>
+<rect class="i-screen" x="414" y="142" width="156" height="320" rx="20"/>
+<rect class="i-notch" x="468" y="148" width="48" height="10" rx="5"/>
+<text class="i-t" x="492" y="184">BMI Calculator</text>
+<text class="i-m i-start" x="428" y="206">Height</text><rect class="i-input" x="428" y="212" width="128" height="28" rx="8"/><text class="i-val i-start" x="440" y="231">175 cm</text>
+<text class="i-m i-start" x="428" y="254">Weight</text><rect class="i-input" x="428" y="260" width="128" height="28" rx="8"/><text class="i-val i-start" x="440" y="279">68 kg</text>
+<rect class="i-cta" x="428" y="304" width="128" height="30" rx="8"/><text class="i-cta-t" x="492" y="323.5">Calculate</text>
+<text class="i-bmi" x="492" y="378">22.2</text>
+<text class="i-chip-g" x="492" y="398">Normal</text>
+<rect class="i-gauge" x="430" y="414" width="124" height="8" rx="4"/>
+<circle class="i-gauge-dot" cx="470" cy="418" r="7"/>
+<text class="i-m" x="492" y="446">height ↔ weight → BMI</text>
+<g transform="translate(82 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">Responsive</text></g>
+<g transform="translate(212 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">Smooth animations</text></g>
+<g transform="translate(342 410)"><rect class="i-pill-n" x="-66.0" y="-15" width="132" height="30" rx="15"/><text class="i-chip" y="4.5">BMI calculator</text></g>
+<text class="i-m" x="212" y="458">HTML5 · CSS3 · JavaScript</text>
+</svg>
+</div>
 </div>
 
-<div class="project-content">
-
+<div class="project-info">
+<span class="project-num">03 / Website</span>
 <h3>PowerZone Gym Website</h3>
-
 <p>
 Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a BMI calculator, modern UI, and smooth animations.
 </p>
-
+<ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
 <div class="project-links">
-
-<a href="https://kinglifts.vercel.app" target="_blank">Live</a>
-
-<a href="https://github.com/Bharath5551/gymmembership" target="_blank">GitHub</a>
-
+<a href="https://kinglifts.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+<a href="https://github.com/Bharath5551/gymmembership" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>
 </div>
 
-</div>
-
-</div>
+</article>
 
 </div>
 
@@ -241,35 +846,48 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <section id="internships" class="section">
 
-<h2 class="section-title">Internships</h2>
+<header class="section-head reveal">
+<span class="section-index">05</span>
+<h2 class="section-title">Internship <em>experience</em></h2>
+</header>
 
-<div class="timeline">
+<ol class="timeline">
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">Nov 2025 – Dec 2025<small>Remote</small></span>
+<div class="timeline-body">
 <h3>Software Development Engineer Intern</h3>
-
-<p>Bluestock Fintech • Nov 2025 – Dec 2025</p>
-
+<p class="timeline-org">Bluestock Fintech</p>
+<ul class="timeline-points">
+<li>Developed and maintained Java backend services and REST APIs for fintech applications.</li>
+<li>Analysed logs to find and fix defects, working in an Agile team with Git.</li>
+</ul>
 </div>
+</li>
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">May 2025 – Jun 2025<small>Remote</small></span>
+<div class="timeline-body">
 <h3>Python Programming Intern</h3>
-
-<p>CodTech IT Solutions • May 2025 – Jun 2025</p>
-
+<p class="timeline-org">CodTech IT Solutions</p>
+<ul class="timeline-points">
+<li>Wrote Python scripts to automate tasks and process business data; built and tested OOP applications.</li>
+</ul>
 </div>
+</li>
 
-<div class="timeline-item">
-
+<li class="timeline-item reveal">
+<span class="timeline-date">Aug 2024<small>Remote</small></span>
+<div class="timeline-body">
 <h3>Java Development Intern</h3>
-
-<p>TechnoHacks Solutions • Aug 2024</p>
-
+<p class="timeline-org">TechnoHacks Solutions</p>
+<ul class="timeline-points">
+<li>Built Java applications using OOP, the Collections Framework, exception handling and file I/O.</li>
+</ul>
 </div>
+</li>
 
-</div>
+</ol>
 
 </section>
 
@@ -277,49 +895,42 @@ Responsive gym website developed using HTML5, CSS3, and JavaScript featuring a B
 
 <section id="certifications" class="section">
 
-<h2 class="section-title">Certifications</h2>
+<header class="section-head reveal">
+<span class="section-index">06</span>
+<h2 class="section-title"><em>Certifications</em></h2>
+</header>
 
 <div class="certifications-grid">
 
-<div class="certificate-card">
+<article class="certificate-card spotlight reveal">
 
-<img src="images/java-certificate.png"
-alt="Java Certification"
-class="certificate-img">
+<button class="certificate-thumb" type="button" data-full="images/ai-certificate.webp" aria-label="View Artificial Intelligence certificate full size">
+<img src="images/ai-certificate.webp" alt="Artificial Intelligence Certification" loading="lazy" width="1400" height="1081">
+<span class="thumb-hint">View ↗</span>
+</button>
 
-<h3>Information Technology Specialist – Java</h3>
-
-<p class="issuer">
-Certiport | Pearson VUE
-</p>
-
-<p class="date">
-Issued: September 24, 2024
-</p>
-
-</div>
-
-<div class="certificate-card">
-
-<img src="images/ai-certificate.png"
-alt="Artificial Intelligence Certification"
-class="certificate-img">
-
+<div class="certificate-info">
+<p class="issuer">Certiport | Pearson VUE</p>
 <h3>Information Technology Specialist – Artificial Intelligence</h3>
-
-<p class="issuer">
-Certiport | Pearson VUE
-</p>
-
-<p class="date">
-Issued: December 15, 2025
-</p>
-
-<p class="validity">
-Valid for 5 Years
-</p>
-
+<p class="date">Issued: December 15, 2025 <span class="validity">· Valid for 5 Years</span></p>
 </div>
+
+</article>
+
+<article class="certificate-card spotlight reveal">
+
+<button class="certificate-thumb" type="button" data-full="images/java-certificate.webp" aria-label="View Java certificate full size">
+<img src="images/java-certificate.webp" alt="Java Certification" loading="lazy" width="1400" height="1081">
+<span class="thumb-hint">View ↗</span>
+</button>
+
+<div class="certificate-info">
+<p class="issuer">Certiport | Pearson VUE</p>
+<h3>Information Technology Specialist – Java</h3>
+<p class="date">Issued: September 24, 2024</p>
+</div>
+
+</article>
 
 </div>
 
@@ -327,61 +938,67 @@ Valid for 5 Years
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section">
+<section id="contact" class="section contact">
 
-<h2 class="section-title">Contact</h2>
+<header class="section-head reveal">
+<span class="section-index">07</span>
+<h2 class="section-title">Get in <em>touch</em></h2>
+</header>
 
-<div class="contact-box">
+<div class="contact-panel spotlight reveal">
 
-<p>Email: marambeed05@gmail.com</p>
+<p class="contact-kicker">Hiring for software development or Gen AI roles?</p>
 
-<p>
+<h3 class="contact-title">Let's build something <em>great</em> together.</h3>
 
-LinkedIn :
+<div class="contact-email">
+<a href="mailto:marambeed05@gmail.com" class="email-link">marambeed05@gmail.com</a>
+<button class="copy-btn" type="button" data-copy="marambeed05@gmail.com" aria-label="Copy email address">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+<span class="copy-label">Copy</span>
+</button>
+</div>
 
-<a href="https://linkedin.com/in/bharathmarambeed" target="_blank">
+<ul class="contact-links">
 
-linkedin.com/in/bharathmarambeed
-
+<li>
+<a href="https://linkedin.com/in/bharathmarambeed" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>
+<span><small>LinkedIn</small>linkedin.com/in/bharathmarambeed</span>
 </a>
+</li>
 
-</p>
-
-<p>
-
-GitHub :
-
-<a href="https://github.com/Bharath5551" target="_blank">
-
-github.com/Bharath5551
-
+<li>
+<a href="https://github.com/Bharath5551" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" class="fill" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+<span><small>GitHub</small>github.com/Bharath5551</span>
 </a>
+</li>
 
-</p>
-
-<p>
-
-Portfolio :
-
-<a href="https://bharathmportfolio.vercel.app" target="_blank">
-
-bharathmportfolio.vercel.app
-
+<li>
+<a href="https://bharathmportfolio.vercel.app" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+<span><small>Portfolio</small>bharathmportfolio.vercel.app</span>
 </a>
+</li>
 
-</p>
+</ul>
 
 </div>
 
 </section>
 
-<footer>
+</main>
 
+<footer class="footer">
 <p>© 2026 Bharath S Marambeed</p>
-
+<a href="#home" class="back-top">Back to top ↑</a>
 </footer>
 
-<div class="cursor-glow"></div>
+<dialog class="lightbox" aria-label="Image preview">
+<button class="lightbox-close" type="button" aria-label="Close preview">×</button>
+<img src="" alt="">
+</dialog>
 
 <script src="script.js"></script>
 
